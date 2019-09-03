@@ -1,0 +1,5 @@
+plugins :
+   - enable : true
+     resource : net.celloscope.antarika.filesystem.genericdata.v1.resource.SaveResource
+   - enable : true
+     resource : net.celloscope.antarika.filesystem.genericdata.v1.resource.GetResource

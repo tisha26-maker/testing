@@ -1,0 +1,57 @@
+
+dependencies {
+
+	// Logback
+	compile "org.tuxdude.logback.extensions:logback-colorizer:1.0.1"
+	compile "org.fusesource.jansi:jansi:1.11"
+
+	// Dropwizard
+	compile "io.dropwizard:dropwizard-auth:${project.ext.dropwizardVersion}"
+	compile "io.dropwizard:dropwizard-core:${project.ext.dropwizardVersion}"
+
+	// Database
+	compile "commons-dbcp:commons-dbcp:1.2.2"
+	compile "postgresql:postgresql:9.4.1208-jdbc42-atlassian-hosted"
+	
+	compile "mysql:mysql-connector-java:5.1.9"
+
+	// Utility
+	compile "com.google.guava:guava:${project.ext.guavaVersion}"
+	compile "com.google.code.gson:gson:${project.ext.gsonVersion}"
+	compile "commons-io:commons-io:2.4"
+	compile "org.json:json:20090211"
+	compile "org.springframework.data:spring-data-redis:1.7.6.RELEASE"
+	compile "redis.clients:jedis:2.9.0"
+
+	// Report
+    compile 'net.sf.jxls:jxls-core:1.0.5'
+    compile 'com.lowagie:itext:4.2.0'
+    compile 'com.itextpdf:itextpdf:5.3.4'
+
+    compile "org.olap4j:olap4j:1.2.0"
+    compile 'net.sf.jasperreports:jasperreports:6.2.1'
+    compile 'net.sf.jasperreports:jasperreports-fonts:6.0.0'
+    compile 'ar.com.fdvs:DynamicJasper-core-fonts:1.0'
+
+	// Spring
+    compile "org.springframework:spring-core:${project.ext.springFrameworkVersion}"
+	compile "org.springframework:spring-web:${project.ext.springFrameworkVersion}"
+	compile "org.springframework:spring-context:${project.ext.springFrameworkVersion}"
+    compile "org.springframework:spring-jdbc:${project.ext.springFrameworkVersion}"
+    compile "org.springframework:spring-context-support:${project.ext.springFrameworkVersion}"
+    compile "org.springframework:spring-tx:${project.ext.springFrameworkVersion}"
+
+    // Redisson
+    compile "org.redisson:redisson:3.5.7"
+
+    // FileConvter
+	compile "commons-codec:commons-codec:1.10"
+}
+
+sourceSets {
+	main {
+        java {
+            srcDir "src/java"
+        }
+    }
+}

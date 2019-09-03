@@ -1,0 +1,11 @@
+HSET OidHolder personOid "100000155"
+HSET OidHolder agentOid "000001"
+HSET OidHolder agentStaffOid "10000155"
+HSET OidHolder servicePointOid "100156"
+HSET OidHolder serviceTerminalOid "1000163"
+HSET OidHolder cardDeviceOid "1000164"
+HSET OidHolder clientDeviceOid "1000165"
+HSET OidHolder fpDeviceOid "1000164"
+HSET OidHolder printerDeviceOid "1000164"
+
+

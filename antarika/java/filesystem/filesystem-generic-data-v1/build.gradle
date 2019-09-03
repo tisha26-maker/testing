@@ -1,0 +1,16 @@
+
+dependencies {
+	compile project(':service-base')
+	compile "commons-codec:commons-codec:1.10"
+}
+
+sourceSets {
+	main {
+        java {
+            srcDirs =
+    		[
+    			'src/main/java/get', 'src/main/java/save'
+    		]
+        }
+    }
+}

@@ -1,0 +1,11 @@
+plugins :
+   - enable : true
+     resource : net.celloscope.antarika.redis.genericselect.v1.resource.SelectSingleResource
+   - enable : true
+     resource : net.celloscope.antarika.redis.genericselect.v1.resource.SelectResource
+   - enable : true
+     resource : net.celloscope.antarika.redis.genericinsert.v1.resource.InsertSingleResource
+   - enable : true
+     resource : net.celloscope.antarika.redis.genericremove.v1.resource.RemoveSingleResource
+   - enable : true
+     resource : net.celloscope.antarika.redis.oidgenerator.v1.resource.GenerateOidResource

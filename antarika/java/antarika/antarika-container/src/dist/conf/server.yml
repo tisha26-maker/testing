@@ -1,0 +1,47 @@
+application : antarika-service-0
+
+server :
+  rootPath: /antarika/
+  registerDefaultExceptionMappers: false
+  type : default
+  maxThreads : 1024
+  applicationConnectors :
+    - type : http
+      bindHost : 0.0.0.0
+      port : 9000
+    - type: https
+      port: 9500
+      keyStorePath: example.keystore
+      keyStorePassword: example
+      validateCerts: false
+      validatePeers: false
+  adminConnectors :
+    - type : http
+      bindHost : 0.0.0.0
+      port : 9001
+    - type: https
+      port: 9501
+      keyStorePath: example.keystore
+      keyStorePassword: example
+      validateCerts: false
+      validatePeers: false
+
+logging :
+  level : INFO
+  loggers :
+    org.springframework.aop.framework.CglibAopProxy :
+        level: WARN
+  appenders :
+    - type : file
+      threshold : ALL
+      archive : true
+      archivedFileCount : 0
+      timeZone : Dhaka/Asia
+      currentLogFilename : log/antarika-service-0.log
+      archivedLogFilenamePattern : log/antarika-service-0__%d{yyyy-MM-dd_HH}.log
+      logFormat : '%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger:%line - %msg%n'
+    - type : console
+      threshold : ALL
+      timeZone : Dhaka/Asia
+      target : stdout
+      logFormat: '%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger:%line - %msg%n'

@@ -1,0 +1,462 @@
+[
+    {
+        "product": "antarika",
+        "type": "web",
+        "name": "antarika-browser",
+        "application": "antarika-browser-0",
+        "description": "Antarika data browser",
+        "userId": "-",
+        "password": "-",
+        "roleId": "-"
+    },
+    {
+        "product": "cecurity",
+        "type": "web",
+        "name": "cecurity-sso",
+        "application": "cecurity-sso-0",
+        "description": "Single Sign On",
+        "userId": "-",
+        "password": "-",
+        "roleId": "-"
+    },
+    {
+        "product": "cecurity",
+        "type": "web",
+        "name": "cecurity-admin",
+        "application": "cecurity-admin-0",
+        "description": "Cecurity Admin portal",
+        "userId": "-",
+        "password": "-",
+        "roleId": "-"
+    },
+    {
+        "product": "envico",
+        "type": "web",
+        "name": "envico-admin",
+        "application": "envico-admin-0",
+        "description": "Envico Admin portal",
+        "userId": "-",
+        "password": "-",
+        "roleId": "-"
+    },
+    {
+        "product": "ampere",
+        "type": "web",
+        "name": "ampere-admin",
+        "application": "ampere-admin-0",
+        "description": "Ampere Admin portal",
+        "userId": "-",
+        "password": "-",
+        "roleId": "-"
+    },
+    {
+        "product": "corecorrect",
+        "type": "web",
+        "name": "corecorrect-admin",
+        "application": "corecorrect-admin-0",
+        "description": "Corecorrect Admin portal",
+        "userId": "-",
+        "password": "-",
+        "roleId": "-"
+    },
+    {
+        "product": "cools",
+        "type": "web",
+        "name": "cools-admin",
+        "application": "cools-admin-0",
+        "description": "Cools Admin portal",
+        "userId": "-",
+        "password": "-",
+        "roleId": "-"
+    },
+    {
+        "product": "abs",
+        "type": "web",
+        "name": "abs-admin",
+        "application": "abs-admin-0",
+        "description": "Abs Admin portal",
+        "userId": "-",
+        "password": "-",
+        "roleId": "-"
+    },
+    {
+        "product": "abs",
+        "type": "web",
+        "name": "abs-bank",
+        "application": "abs-bank-0",
+        "description": "Abs Bank portal",
+        "userId": "-",
+        "password": "-",
+        "roleId": "-"
+    },
+    {
+        "product": "abs",
+        "type": "web",
+        "name": "abs-branch",
+        "application": "abs-branch-0",
+        "description": "Abs Branch portal",
+        "userId": "-",
+        "password": "-",
+        "roleId": "-"
+    },
+    {
+        "product": "abs",
+        "type": "web",
+        "name": "abs-doer",
+        "application": "abs-doer-0",
+        "description": "Abs DOER portal",
+        "userId": "-",
+        "password": "-",
+        "roleId": "-"
+    },
+    {
+        "product": "cellostics",
+        "type": "web",
+        "name": "cellostics-admin",
+        "application": "cellostics-admin-0",
+        "description": "Cellostics Admin portal",
+        "userId": "-",
+        "password": "-",
+        "roleId": "-"
+    },
+    {
+        "product": "cellostics",
+        "type": "web",
+        "name": "cellostics-user",
+        "application": "cellostics-user-0",
+        "description": "Cellostics User portal",
+        "userId": "-",
+        "password": "-",
+        "roleId": "-"
+    },
+    {
+        "product": "collector",
+        "type": "web",
+        "name": "collector-admin",
+        "application": "collector-admin-0",
+        "description": "Collector Admin portal",
+        "userId": "-",
+        "password": "-",
+        "roleId": "-"
+    },
+    {
+        "product": "payscope",
+        "type": "web",
+        "name": "payscope-admin",
+        "application": "payscope-admin-0",
+        "description": "Payscope Admin portal",
+        "userId": "-",
+        "password": "-",
+        "roleId": "-"
+    },
+    {
+        "product": "swp",
+        "type": "web",
+        "name": "swp-admin",
+        "application": "swp-admin-0",
+        "description": "Swp Admin portal",
+        "userId": "-",
+        "password": "-",
+        "roleId": "-"
+    },
+    {
+        "product": "inklusion",
+        "type": "web",
+        "name": "inklusion-admin",
+        "application": "inklusion-admin-0",
+        "description": "InKlusion Admin portal",
+        "userId": "-",
+        "password": "-",
+        "roleId": "-"
+    },
+    {
+        "product": "inklusion",
+        "type": "web",
+        "name": "inklusion-user",
+        "application": "inklusion-user-0",
+        "description": "InKusion User portal",
+        "userId": "-",
+        "password": "-",
+        "roleId": "-"
+    },
+    {
+        "product": "drws",
+        "type": "web",
+        "name": "drws-admin",
+        "application": "drws-admin-0",
+        "description": "Drws Admin portal",
+        "userId": "-",
+        "password": "-",
+        "roleId": "-"
+    },
+    {
+        "product": "antarika",
+        "type": "container",
+        "name": "antarika-service",
+        "application": "antarika-service-0",
+        "description": "Antarika Container service",
+        "userId": "antarika-service",
+        "password": "antarika-service",
+        "roleId": "SERVICE"
+    },
+    {
+        "product": "cecurity",
+        "type": "container",
+        "name": "cecurity-service",
+        "application": "cecurity-service-0",
+        "description": "Cecurity Container service",
+        "userId": "cecurity-service",
+        "password": "cecurity-service",
+        "roleId": "SERVICE"
+    },
+    {
+        "product": "envico",
+        "type": "container",
+        "name": "envico-service",
+        "application": "envico-service-0",
+        "description": "Envico Container service",
+        "userId": "envico-service",
+        "password": "envico-service",
+        "roleId": "SERVICE"
+    },
+    {
+        "product": "ampere",
+        "type": "container",
+        "name": "ampere-service",
+        "application": "ampere-service-0",
+        "description": "Ampere Container service",
+        "userId": "ampere-service",
+        "password": "ampere-service",
+        "roleId": "SERVICE"
+    },
+    {
+        "product": "corecorrect",
+        "type": "container",
+        "name": "corecorrect-service",
+        "application": "corecorrect-service-0",
+        "description": "CoreCorrect Container service",
+        "userId": "corecorrect-service",
+        "password": "corecorrect-service",
+        "roleId": "SERVICE"
+    },
+    {
+        "product": "cools",
+        "type": "container",
+        "name": "cools-service",
+        "application": "cools-service-0",
+        "description": "Cools Container service",
+        "userId": "cools-service",
+        "password": "cools-service",
+        "roleId": "SERVICE"
+    },
+    {
+        "product": "abs",
+        "type": "container",
+        "name": "abs-service",
+        "application": "abs-service-0",
+        "description": "Abs Container service",
+        "userId": "abs-service",
+        "password": "abs-service",
+        "roleId": "SERVICE"
+    },
+    {
+        "product": "abs",
+        "type": "container",
+        "name": "abs-service",
+        "application": "abs-service-1",
+        "description": "Abs Container service",
+        "userId": "abs-service",
+        "password": "abs-service",
+        "roleId": "SERVICE"
+    },
+    {
+        "product": "cellostics",
+        "type": "container",
+        "name": "cellostics-service",
+        "application": "cellostics-service-0",
+        "description": "Cellostics Container service",
+        "userId": "cellostics-service",
+        "password": "cellostics-service",
+        "roleId": "SERVICE"
+    },
+    {
+        "product": "collector",
+        "type": "container",
+        "name": "collector-service",
+        "application": "collector-service-0",
+        "description": "Collector Container service",
+        "userId": "collector-service",
+        "password": "collector-service",
+        "roleId": "SERVICE"
+    },
+    {
+        "product": "payscope",
+        "type": "container",
+        "name": "payscope-service",
+        "application": "payscope-service-0",
+        "description": "Payscope Container service",
+        "userId": "payscope-service",
+        "password": "payscope-service",
+        "roleId": "SERVICE"
+    },
+    {
+        "product": "swp",
+        "type": "container",
+        "name": "swp-service",
+        "application": "swp-service-0",
+        "description": "Swp Container service",
+        "userId": "swp-service",
+        "password": "swp-service",
+        "roleId": "SERVICE"
+    },
+    {
+        "product": "inklusion",
+        "type": "container",
+        "name": "inklusion-service",
+        "application": "inklusion-service-0",
+        "description": "InKlusion Container service",
+        "userId": "inklusion-service",
+        "password": "inklusion-service",
+        "roleId": "SERVICE"
+    },
+    {
+        "product": "drws",
+        "type": "container",
+        "name": "drws-service",
+        "application": "drws-service-0",
+        "description": "Drws Container service",
+        "userId": "drws-service",
+        "password": "drws-service",
+        "roleId": "SERVICE"
+    },
+    {
+        "product": "dpcore",
+        "type": "container",
+        "name": "dpcore-service",
+        "application": "dpcore-service-0",
+        "description": "DP-Core Container service",
+        "userId": "dpcore-service",
+        "password": "dpcore-service",
+        "roleId": "SERVICE"
+    },
+    {
+        "product": "python",
+        "type": "script",
+        "name": "python-master-data",
+        "application": "python-master-data",
+        "description": "Python script for master-data",
+        "userId": "python-master-data",
+        "password": "python-master-data",
+        "roleId": "SERVICE"
+    },
+    {
+        "product": "python",
+        "type": "script",
+        "name": "python-regression",
+        "application": "python-regression",
+        "description": "Python script for regression test",
+        "userId": "python-regression",
+        "password": "python-regression",
+        "roleId": "REGRESSION"
+    },
+    {
+        "product": "ampere",
+        "type": "android",
+        "name": "ampere-app",
+        "application": "ampere-app",
+        "description": "Ampere field app",
+        "userId": "-",
+        "password": "-",
+        "roleId": "-"
+    },
+    {
+        "product": "abs",
+        "type": "android",
+        "name": "abs-teller-app",
+        "application": "abs-teller-app",
+        "description": "Abs Teller app",
+        "userId": "-",
+        "password": "-",
+        "roleId": "-"
+    },
+    {
+        "product": "cellostics",
+        "type": "android",
+        "name": "cellostics-app",
+        "application": "cellostics-app",
+        "description": "Cellostics app",
+        "userId": "-",
+        "password": "-",
+        "roleId": "-"
+    },
+    {
+        "product": "collector",
+        "type": "android",
+        "name": "collector-teller-app",
+        "application": "collector-teller-app",
+        "description": "Collector Teller app",
+        "userId": "-",
+        "password": "-",
+        "roleId": "-"
+    },
+    {
+        "product": "payscope",
+        "type": "android",
+        "name": "payscope-app",
+        "application": "payscope-app",
+        "description": "Payscope app",
+        "userId": "-",
+        "password": "-",
+        "roleId": "-"
+    },
+    {
+        "product": "inklusion",
+        "type": "android",
+        "name": "inklusion-app",
+        "application": "inklusion-app",
+        "description": "InKlusion User app",
+        "userId": "-",
+        "password": "-",
+        "roleId": "-"
+    },
+    {
+        "product": "ouipay",
+        "type": "android",
+        "name": "ouipay-app",
+        "application": "ouipay-app",
+        "description": "OuiPay User app",
+        "userId": "-",
+        "password": "-",
+        "roleId": "-"
+    },
+    {
+        "product": "ics",
+        "type": "container",
+        "name": "ics-service",
+        "application": "ics-service-0",
+        "description": "Identity and Credential Server",
+        "userId": "ics-service",
+        "password": "ics-service",
+        "roleId": "SERVICE"
+    },
+    {
+        "product": "rdp",
+        "type": "container",
+        "name": "rdp-service",
+        "application": "rdp-service-0",
+        "description": "Identity and Credential Server",
+        "userId": "rdp-service",
+        "password": "rdp-service",
+        "roleId": "SERVICE"
+    },
+    {
+        "product": "rdp",
+        "type": "web",
+        "name": "rdp-admin",
+        "application": "rdp-admin-0",
+        "description": "RDP Admin portal",
+        "userId": "-",
+        "password": "-",
+        "roleId": "-"
+    }
+]

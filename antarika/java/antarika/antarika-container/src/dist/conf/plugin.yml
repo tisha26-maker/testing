@@ -1,0 +1,3 @@
+- plugin/postgres.yml
+- plugin/redis.yml
+- plugin/filesystem.yml

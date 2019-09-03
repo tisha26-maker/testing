@@ -1,0 +1,59 @@
+apply plugin: 'application'
+
+mainClassName = "net.celloscope.antarika.app.AntarikaServiceContainer"
+applicationDefaultJvmArgs = ["-Xms2048m", "-Xmx3072m", "-XX:PermSize=1024m", "-XX:MaxPermSize=1024m", "-Dfile.encoding=UTF-8"]
+
+dependencies {
+	compile project(':service-base')
+	compile project(':postgres-generic-function-v2')
+	compile project(':redis-oid-generator-v1')
+	compile project(':filesystem-generic-data-v1')
+	compile project(':postgres-generic-select-v1')
+	compile project(':postgres-generic-insert-v1')
+	compile project(':postgres-generic-update-v1')
+	compile project(':postgres-generic-delete-v1')
+	compile project(':postgres-generic-function-v1')
+	compile project(':redis-generic-select-v1')
+	compile project(':redis-generic-insert-v1')
+	compile project(':redis-generic-remove-v1')
+}
+
+distZip {
+    into(project.name+"-"+project.version) {
+        from '.'
+        include 'example.keystore'
+    }
+}
+
+sourceSets {
+	main {
+        java {
+            srcDir 'src/java'
+        }
+        resources {
+            srcDir 'src/resources'
+        }
+    }
+	conf {
+        java {
+            srcDir 'src/dist/conf'
+        }
+    }
+}
+
+
+startScripts {
+    doLast {
+        def winScriptFile  = file getWindowsScript()
+        def winFileText = winScriptFile.text
+        winFileText = winFileText.replaceAll('set CLASSPATH=.*', 'rem original CLASSPATH declaration replaced by:\nset CLASSPATH=%APP_HOME%\\\\conf;%APP_HOME%\\\\lib\\\\\\*')
+        winScriptFile.text = winFileText
+
+        def unixScriptFile  = file getUnixScript()
+        def unixFileText = unixScriptFile.text
+        def classpath = 'CLASSPATH=$APP_HOME/conf:$APP_HOME/lib/*'
+        unixFileText = unixFileText.replaceAll('CLASSPATH=.*', java.util.regex.Matcher.quoteReplacement( classpath ))
+        unixScriptFile.text = unixFileText
+
+    }
+}

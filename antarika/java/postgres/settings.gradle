@@ -1,0 +1,7 @@
+include 'postgres-generic-select-v1'
+include 'postgres-generic-insert-v1'
+include 'postgres-generic-update-v1'
+include 'postgres-generic-delete-v1'
+include 'postgres-generic-function-v1'
+
+include 'postgres-generic-function-v2'

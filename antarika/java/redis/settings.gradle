@@ -1,0 +1,5 @@
+include 'redis-generic-select-v1'
+include 'redis-generic-insert-v1'
+include 'redis-generic-remove-v1'
+
+include 'redis-oid-generator-v1'

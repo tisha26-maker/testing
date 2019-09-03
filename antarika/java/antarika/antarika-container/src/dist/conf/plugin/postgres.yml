@@ -1,0 +1,16 @@
+plugins :
+   - enable : true
+     resource : net.celloscope.antarika.postgres.genericselect.v1.resource.SelectResource
+   - enable : true
+     resource : net.celloscope.antarika.postgres.genericinsert.v1.resource.InsertSingleResource
+   - enable : true
+     resource : net.celloscope.antarika.postgres.genericinsert.v1.resource.InsertMultipleResource
+   - enable : true
+     resource : net.celloscope.antarika.postgres.genericupdate.v1.resource.UpdateResource
+   - enable : true
+     resource : net.celloscope.antarika.postgres.genericdelete.v1.resource.DeleteResource
+   - enable : true
+     resource : net.celloscope.antarika.postgres.genericfunction.v1.resource.ExecuteFunctionResource
+
+   - enable : true
+     resource : net.celloscope.antarika.postgres.genericfunction.v2.resource.ExecuteFunctionResource

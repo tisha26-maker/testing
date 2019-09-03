@@ -1,0 +1,1863 @@
+{
+    "07-collector": [
+        {
+            "script": "07_00__settings.sql",
+            "tables": [
+                {
+                    "sortOrder": 1,
+                    "notes": "This table associated to hold area information",
+                    "constraints": [
+                        {
+                            "check": "-",
+                            "columnName": "oid",
+                            "constraintType": "Primary",
+                            "reference": "-",
+                            "sortOrder": 1
+                        }
+                    ],
+                    "tableName": "BgdclAreaInfo",
+                    "partition": "-",
+                    "data": [],
+                    "columns": [
+                        {
+                            "sortOrder": 1,
+                            "columnName": "oid",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "Yes",
+                            "notes": "areaCode + subAreaCode",
+                            "partition": "-",
+                            "precision": "128"
+                        },
+                        {
+                            "sortOrder": 2,
+                            "columnName": "areaCode",
+                            "type": "char",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Bill area identification code",
+                            "partition": "-",
+                            "precision": "2"
+                        },
+                        {
+                            "sortOrder": 3,
+                            "columnName": "subAreaCode",
+                            "type": "char",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Bill sub-area identification code",
+                            "partition": "-",
+                            "precision": "2"
+                        },
+                        {
+                            "sortOrder": 4,
+                            "columnName": "areaName",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Bill area name",
+                            "partition": "-",
+                            "precision": "50"
+                        },
+                        {
+                            "sortOrder": 5,
+                            "columnName": "subAreaName",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Bill sub-area name",
+                            "partition": "-",
+                            "precision": "50"
+                        },
+                        {
+                            "sortOrder": 6,
+                            "columnName": "bgdclSchemaName",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "From which schema this data pick",
+                            "partition": "-",
+                            "precision": "128"
+                        }
+                    ]
+                },
+                {
+                    "sortOrder": 2,
+                    "notes": "This table associated to hold customer type",
+                    "constraints": [
+                        {
+                            "check": "-",
+                            "columnName": "customerTypeCode",
+                            "constraintType": "Primary",
+                            "reference": "-",
+                            "sortOrder": 1
+                        }
+                    ],
+                    "tableName": "BgdclCustomerType",
+                    "partition": "-",
+                    "data": [],
+                    "columns": [
+                        {
+                            "sortOrder": 1,
+                            "columnName": "customerTypeCode",
+                            "type": "char",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "Yes",
+                            "notes": "Customer identification type  code",
+                            "partition": "-",
+                            "precision": "2"
+                        },
+                        {
+                            "sortOrder": 2,
+                            "columnName": "customerTypeDescription",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Customer type description",
+                            "partition": "-",
+                            "precision": "50"
+                        },
+                        {
+                            "sortOrder": 3,
+                            "columnName": "gasRatePerMcf",
+                            "type": "numeric",
+                            "default": "-",
+                            "scale": "2",
+                            "required": "-",
+                            "notes": "-",
+                            "partition": "-",
+                            "precision": "10"
+                        },
+                        {
+                            "sortOrder": 4,
+                            "columnName": "gasRatePerCm",
+                            "type": "numeric",
+                            "default": "-",
+                            "scale": "2",
+                            "required": "-",
+                            "notes": "-",
+                            "partition": "-",
+                            "precision": "10"
+                        },
+                        {
+                            "sortOrder": 5,
+                            "columnName": "surchargeRate",
+                            "type": "numeric",
+                            "default": "-",
+                            "scale": "2",
+                            "required": "-",
+                            "notes": "Surgical charge (due to late)",
+                            "partition": "-",
+                            "precision": "10"
+                        },
+                        {
+                            "sortOrder": 6,
+                            "columnName": "minBillStatus",
+                            "type": "char",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "-",
+                            "partition": "-",
+                            "precision": "2"
+                        },
+                        {
+                            "sortOrder": 7,
+                            "columnName": "status",
+                            "type": "char",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Csutomer status",
+                            "partition": "-",
+                            "precision": "1"
+                        },
+                        {
+                            "sortOrder": 8,
+                            "columnName": "bgStatus",
+                            "type": "int",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Customer bgStatus",
+                            "partition": "-",
+                            "precision": "1"
+                        },
+                        {
+                            "sortOrder": 9,
+                            "columnName": "daysForDefaulter",
+                            "type": "int",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "-",
+                            "partition": "-",
+                            "precision": "3"
+                        },
+                        {
+                            "sortOrder": 10,
+                            "columnName": "surchargePropagation",
+                            "type": "int",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "-",
+                            "partition": "-",
+                            "precision": "1"
+                        },
+                        {
+                            "sortOrder": 11,
+                            "columnName": "bgdclSchemaName",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "From which schema this data pick",
+                            "partition": "-",
+                            "precision": "128"
+                        }
+                    ]
+                },
+                {
+                    "sortOrder": 3,
+                    "notes": "This table associated to hold appliance type inforamtion",
+                    "constraints": [
+                        {
+                            "check": "-",
+                            "columnName": "applianceTypeCode",
+                            "constraintType": "Primary",
+                            "reference": "-",
+                            "sortOrder": 1
+                        }
+                    ],
+                    "tableName": "BgdclApplianceInfo",
+                    "partition": "-",
+                    "data": [],
+                    "columns": [
+                        {
+                            "sortOrder": 1,
+                            "columnName": "applianceTypeCode",
+                            "type": "char",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "Yes",
+                            "notes": "Applicance type identification code",
+                            "partition": "-",
+                            "precision": "2"
+                        },
+                        {
+                            "sortOrder": 2,
+                            "columnName": "applianceName",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Appliance name",
+                            "partition": "-",
+                            "precision": "30"
+                        },
+                        {
+                            "sortOrder": 3,
+                            "columnName": "applianceRate",
+                            "type": "numeric",
+                            "default": "-",
+                            "scale": "2",
+                            "required": "-",
+                            "notes": "Appliance rate",
+                            "partition": "-",
+                            "precision": "7"
+                        },
+                        {
+                            "sortOrder": 4,
+                            "columnName": "surchargeRateUpto6months",
+                            "type": "numeric",
+                            "default": "-",
+                            "scale": "2",
+                            "required": "-",
+                            "notes": "Surcharge rate up to 6 months",
+                            "partition": "-",
+                            "precision": "5"
+                        },
+                        {
+                            "sortOrder": 5,
+                            "columnName": "surchargeRateAfter6months",
+                            "type": "numeric",
+                            "default": "-",
+                            "scale": "2",
+                            "required": "-",
+                            "notes": "Surcharge rate after 6 months",
+                            "partition": "-",
+                            "precision": "5"
+                        },
+                        {
+                            "sortOrder": 6,
+                            "columnName": "status",
+                            "type": "char",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Appliance type status",
+                            "partition": "-",
+                            "precision": "1"
+                        },
+                        {
+                            "sortOrder": 7,
+                            "columnName": "bgdclSchemaName",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "From which schema this data pick",
+                            "partition": "-",
+                            "precision": "128"
+                        }
+                    ]
+                },
+                {
+                    "sortOrder": 4,
+                    "notes": "This table associated to hold appliance type inforamtion history",
+                    "constraints": [
+                        {
+                            "check": "-",
+                            "columnName": "oid",
+                            "constraintType": "Primary",
+                            "reference": "-",
+                            "sortOrder": 1
+                        }
+                    ],
+                    "tableName": "BgdclApplianceInfoHistory",
+                    "partition": "-",
+                    "data": [],
+                    "columns": [
+                        {
+                            "sortOrder": 1,
+                            "columnName": "oid",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "Yes",
+                            "notes": "Appliance history primary key",
+                            "partition": "-",
+                            "precision": "128"
+                        },
+                        {
+                            "sortOrder": 1,
+                            "columnName": "day",
+                            "type": "int",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Appliance updating day",
+                            "partition": "-",
+                            "precision": "32"
+                        },
+                        {
+                            "sortOrder": 2,
+                            "columnName": "month",
+                            "type": "int",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Appliance updating month",
+                            "partition": "-",
+                            "precision": "32"
+                        },
+                        {
+                            "sortOrder": 3,
+                            "columnName": "year",
+                            "type": "int",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Appliance updating year",
+                            "partition": "-",
+                            "precision": "32"
+                        },
+                        {
+                            "sortOrder": 4,
+                            "columnName": "applianceTypeCode",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Appliance type identification code",
+                            "partition": "-",
+                            "precision": "2"
+                        },
+                        {
+                            "sortOrder": 5,
+                            "columnName": "applianceName",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Appliance name",
+                            "partition": "-",
+                            "precision": "30"
+                        },
+                        {
+                            "sortOrder": 6,
+                            "columnName": "applianceRate",
+                            "type": "numeric",
+                            "default": "-",
+                            "scale": "2",
+                            "required": "-",
+                            "notes": "Appliance rate",
+                            "partition": "-",
+                            "precision": "7"
+                        },
+                        {
+                            "sortOrder": 7,
+                            "columnName": "surchargeRateUpto6months",
+                            "type": "numeric",
+                            "default": "-",
+                            "scale": "2",
+                            "required": "-",
+                            "notes": "Surcharge rate up to 6 months",
+                            "partition": "-",
+                            "precision": "5"
+                        },
+                        {
+                            "sortOrder": 8,
+                            "columnName": "surchargeRateAfter6months",
+                            "type": "numeric",
+                            "default": "-",
+                            "scale": "2",
+                            "required": "-",
+                            "notes": "Surcharge rate after 6 months",
+                            "partition": "-",
+                            "precision": "5"
+                        },
+                        {
+                            "sortOrder": 9,
+                            "columnName": "status",
+                            "type": "char",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Appliance type status",
+                            "partition": "-",
+                            "precision": "1"
+                        },
+                        {
+                            "sortOrder": 10,
+                            "columnName": "bgdclSchemaName",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "From which schema this data pick",
+                            "partition": "-",
+                            "precision": "128"
+                        }
+                    ]
+                },
+                {
+                    "sortOrder": 5,
+                    "notes": "This table associated to hold abs charge infromantion",
+                    "constraints": [
+                        {
+                            "check": "-",
+                            "columnName": "oid",
+                            "constraintType": "Primary",
+                            "reference": "-",
+                            "sortOrder": 1
+                        }
+                    ],
+                    "tableName": "BgdclBakhrabadChargeModel",
+                    "partition": "-",
+                    "data": [],
+                    "columns": [
+                        {
+                            "sortOrder": 1,
+                            "columnName": "oid",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "Yes",
+                            "notes": "Charge model primary key",
+                            "partition": "-",
+                            "precision": "128"
+                        },
+                        {
+                            "sortOrder": 1,
+                            "columnName": "chargemodelid",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Charge Model oid",
+                            "partition": "-",
+                            "precision": "128"
+                        },
+                        {
+                            "sortOrder": 2,
+                            "columnName": "servicepointoid",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Service Point oid",
+                            "partition": "-",
+                            "precision": "128"
+                        },
+                        {
+                            "sortOrder": 3,
+                            "columnName": "gaschargejson",
+                            "type": "text",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Gas charge model specification",
+                            "partition": "-",
+                            "precision": "-"
+                        },
+                        {
+                            "sortOrder": 4,
+                            "columnName": "createdaccount",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Creadit account",
+                            "partition": "-",
+                            "precision": "128"
+                        },
+                        {
+                            "sortOrder": 5,
+                            "columnName": "createdby",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Who (which login) created the record",
+                            "partition": "-",
+                            "precision": "128"
+                        },
+                        {
+                            "sortOrder": 6,
+                            "columnName": "createdon",
+                            "type": "timestamp",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "When the record was created",
+                            "partition": "-",
+                            "precision": "-"
+                        },
+                        {
+                            "sortOrder": 7,
+                            "columnName": "updatedby",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "2",
+                            "required": "-",
+                            "notes": "Who (which login) last updated the record",
+                            "partition": "-",
+                            "precision": "128"
+                        },
+                        {
+                            "sortOrder": 8,
+                            "columnName": "updatedon",
+                            "type": "timestamp",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "When the record was last updated",
+                            "partition": "-",
+                            "precision": "-"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "script": "07_01__customer.sql",
+            "tables": [
+                {
+                    "sortOrder": 6,
+                    "notes": "This table associated to hold cusotmer appliance information",
+                    "constraints": [
+                        {
+                            "check": "-",
+                            "columnName": "oid",
+                            "constraintType": "Primary",
+                            "reference": "-",
+                            "sortOrder": 1
+                        }
+                    ],
+                    "tableName": "BgdclNmCustomerAppliance",
+                    "partition": "-",
+                    "data": [],
+                    "columns": [
+                        {
+                            "sortOrder": 1,
+                            "columnName": "oid",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "Yes",
+                            "notes": "Primary key, generated by customerCode + applianceTypeCode",
+                            "partition": "-",
+                            "precision": "128"
+                        },
+                        {
+                            "sortOrder": 2,
+                            "columnName": "customerCode",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Unique code to identify a customer, comes from BgdclCustomerBasicInfo",
+                            "partition": "-",
+                            "precision": "15"
+                        },
+                        {
+                            "sortOrder": 3,
+                            "columnName": "applianceTypeCode",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Unique code to identify appliance type, comes from BgdclApplianceInfo table",
+                            "partition": "-",
+                            "precision": "2"
+                        },
+                        {
+                            "sortOrder": 4,
+                            "columnName": "quantity",
+                            "type": "int",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Numbere of appliance",
+                            "partition": "-",
+                            "precision": "4"
+                        },
+                        {
+                            "sortOrder": 5,
+                            "columnName": "user",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "-",
+                            "partition": "-",
+                            "precision": "200"
+                        },
+                        {
+                            "sortOrder": 6,
+                            "columnName": "bgdclSchemaName",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "From which schema this data pick",
+                            "partition": "-",
+                            "precision": "128"
+                        }
+                    ]
+                },
+                {
+                    "sortOrder": 7,
+                    "notes": "This table associated to hold cusotmer appliance information history",
+                    "constraints": [
+                        {
+                            "check": "-",
+                            "columnName": "oid",
+                            "constraintType": "Primary",
+                            "reference": "-",
+                            "sortOrder": 1
+                        }
+                    ],
+                    "tableName": "BgdclNmCustApplianceHistory",
+                    "partition": "-",
+                    "data": [],
+                    "columns": [
+                        {
+                            "sortOrder": 1,
+                            "columnName": "oid",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "Yes",
+                            "notes": "Primary key, generated by day + month + year + customerCode + applianceTypeCode",
+                            "partition": "-",
+                            "precision": "128"
+                        },
+                        {
+                            "sortOrder": 2,
+                            "columnName": "day",
+                            "type": "int",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "updated day",
+                            "partition": "-",
+                            "precision": "32"
+                        },
+                        {
+                            "sortOrder": 3,
+                            "columnName": "month",
+                            "type": "int",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "updated month",
+                            "partition": "-",
+                            "precision": "32"
+                        },
+                        {
+                            "sortOrder": 4,
+                            "columnName": "year",
+                            "type": "int",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "updated year",
+                            "partition": "-",
+                            "precision": "32"
+                        },
+                        {
+                            "sortOrder": 5,
+                            "columnName": "customerCode",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Unique code to identify a customer, comes from BgdclCustomerBasicInfo",
+                            "partition": "-",
+                            "precision": "15"
+                        },
+                        {
+                            "sortOrder": 6,
+                            "columnName": "applianceTypeCode",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Unique code to identify appliance type, comes from BgdclApplianceInfo table",
+                            "partition": "-",
+                            "precision": "2"
+                        },
+                        {
+                            "sortOrder": 7,
+                            "columnName": "quantity",
+                            "type": "int",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Number of appliance",
+                            "partition": "-",
+                            "precision": "4"
+                        },
+                        {
+                            "sortOrder": 8,
+                            "columnName": "user",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "-",
+                            "partition": "-",
+                            "precision": "200"
+                        },
+                        {
+                            "sortOrder": 9,
+                            "columnName": "bgdclSchemaName",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "From which schema this data pick",
+                            "partition": "-",
+                            "precision": "128"
+                        }
+                    ]
+                },
+                {
+                    "sortOrder": 8,
+                    "notes": "This table associated to hold cusotmer basic information",
+                    "constraints": [
+                        {
+                            "check": "-",
+                            "columnName": "customerCode",
+                            "constraintType": "Primary",
+                            "reference": "-",
+                            "sortOrder": 1
+                        },
+                        {
+                            "check": "metered, non-metered",
+                            "columnName": "customerType",
+                            "constraintType": "Check",
+                            "reference": "-",
+                            "sortOrder": 37
+                        }
+                    ],
+                    "tableName": "BgdclCustomerBasicInfo",
+                    "partition": "-",
+                    "data": [],
+                    "columns": [
+                        {
+                            "sortOrder": 1,
+                            "columnName": "customerCode",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "Yes",
+                            "notes": "Primary Key, to identify a customer uniquely. Generated by areaCode + subAreaCode + customerTypeCode + - + six digits serial number ",
+                            "partition": "-",
+                            "precision": "15"
+                        },
+                        {
+                            "sortOrder": 2,
+                            "columnName": "salesSerial",
+                            "type": "bigint",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "-",
+                            "partition": "-",
+                            "precision": "30"
+                        },
+                        {
+                            "sortOrder": 3,
+                            "columnName": "revenueSerial",
+                            "type": "bigint",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "-",
+                            "partition": "-",
+                            "precision": "12"
+                        },
+                        {
+                            "sortOrder": 4,
+                            "columnName": "customerCodeOld",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "This code known by customer",
+                            "partition": "-",
+                            "precision": "50"
+                        },
+                        {
+                            "sortOrder": 5,
+                            "columnName": "customerTypeCode",
+                            "type": "char",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Which type of customer, comes from BgdclCustomerType table",
+                            "partition": "-",
+                            "precision": "2"
+                        },
+                        {
+                            "sortOrder": 6,
+                            "columnName": "areaCode",
+                            "type": "char",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Code of a area, comes from BgdclAreaInfo table",
+                            "partition": "-",
+                            "precision": "2"
+                        },
+                        {
+                            "sortOrder": 7,
+                            "columnName": "subAreaCode",
+                            "type": "char",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Code of a sub-area, comes from BgdclAreaInfo table",
+                            "partition": "-",
+                            "precision": "2"
+                        },
+                        {
+                            "sortOrder": 8,
+                            "columnName": "mid",
+                            "type": "char",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "-",
+                            "partition": "-",
+                            "precision": "3"
+                        },
+                        {
+                            "sortOrder": 9,
+                            "columnName": "customerName",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Name of a customer",
+                            "partition": "-",
+                            "precision": "50"
+                        },
+                        {
+                            "sortOrder": 10,
+                            "columnName": "fathersOrHusbandsName",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Name of fathers or husbank",
+                            "partition": "-",
+                            "precision": "50"
+                        },
+                        {
+                            "sortOrder": 11,
+                            "columnName": "mothersName",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Name of mother",
+                            "partition": "-",
+                            "precision": "50"
+                        },
+                        {
+                            "sortOrder": 12,
+                            "columnName": "installationAddressP1",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Customer address",
+                            "partition": "-",
+                            "precision": "100"
+                        },
+                        {
+                            "sortOrder": 13,
+                            "columnName": "installationAddressP2",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Customer address",
+                            "partition": "-",
+                            "precision": "100"
+                        },
+                        {
+                            "sortOrder": 14,
+                            "columnName": "installationAddressP3",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Customer address",
+                            "partition": "-",
+                            "precision": "50"
+                        },
+                        {
+                            "sortOrder": 15,
+                            "columnName": "billingAddressP1",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "In which address bill will be send",
+                            "partition": "-",
+                            "precision": "100"
+                        },
+                        {
+                            "sortOrder": 16,
+                            "columnName": "billingAddressP2",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "In which address bill will be send",
+                            "partition": "-",
+                            "precision": "100"
+                        },
+                        {
+                            "sortOrder": 17,
+                            "columnName": "billingAddressP3",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "In which address bill will be send",
+                            "partition": "-",
+                            "precision": "50"
+                        },
+                        {
+                            "sortOrder": 18,
+                            "columnName": "telephoneNo",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Customer telephone number",
+                            "partition": "-",
+                            "precision": "25"
+                        },
+                        {
+                            "sortOrder": 19,
+                            "columnName": "purposeOfUsage",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "In which purpose gas will be used",
+                            "partition": "-",
+                            "precision": "30"
+                        },
+                        {
+                            "sortOrder": 20,
+                            "columnName": "natureOfUsage",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "-",
+                            "partition": "-",
+                            "precision": "30"
+                        },
+                        {
+                            "sortOrder": 21,
+                            "columnName": "maxLoadPerHour",
+                            "type": "numeric",
+                            "default": "-",
+                            "scale": "2",
+                            "required": "-",
+                            "notes": "-",
+                            "partition": "-",
+                            "precision": "14"
+                        },
+                        {
+                            "sortOrder": 22,
+                            "columnName": "maxLoadPerPay",
+                            "type": "numeric",
+                            "default": "-",
+                            "scale": "2",
+                            "required": "-",
+                            "notes": "-",
+                            "partition": "-",
+                            "precision": "14"
+                        },
+                        {
+                            "sortOrder": 23,
+                            "columnName": "maxLoadPerMonth",
+                            "type": "numeric",
+                            "default": "-",
+                            "scale": "2",
+                            "required": "-",
+                            "notes": "-",
+                            "partition": "-",
+                            "precision": "14"
+                        },
+                        {
+                            "sortOrder": 24,
+                            "columnName": "minLoadPerMonth",
+                            "type": "numeric",
+                            "default": "-",
+                            "scale": "2",
+                            "required": "-",
+                            "notes": "-",
+                            "partition": "-",
+                            "precision": "14"
+                        },
+                        {
+                            "sortOrder": 25,
+                            "columnName": "securityDepositAmount",
+                            "type": "numeric",
+                            "default": "-",
+                            "scale": "2",
+                            "required": "-",
+                            "notes": "-",
+                            "partition": "-",
+                            "precision": "14"
+                        },
+                        {
+                            "sortOrder": 26,
+                            "columnName": "securityDepositAmount1",
+                            "type": "numeric",
+                            "default": "-",
+                            "scale": "2",
+                            "required": "-",
+                            "notes": "-",
+                            "partition": "-",
+                            "precision": "14"
+                        },
+                        {
+                            "sortOrder": 27,
+                            "columnName": "dateOfApplication",
+                            "type": "date",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "In which date apply for connection",
+                            "partition": "-",
+                            "precision": "-"
+                        },
+                        {
+                            "sortOrder": 28,
+                            "columnName": "dateOfContract",
+                            "type": "date",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "In which date contract done",
+                            "partition": "-",
+                            "precision": "-"
+                        },
+                        {
+                            "sortOrder": 29,
+                            "columnName": "dateOfConnection",
+                            "type": "date",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "In which date connection given",
+                            "partition": "-",
+                            "precision": "-"
+                        },
+                        {
+                            "sortOrder": 30,
+                            "columnName": "bankCode",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Code to third pary. Like Doer, South East Bank",
+                            "partition": "-",
+                            "precision": "8"
+                        },
+                        {
+                            "sortOrder": 31,
+                            "columnName": "connectionStatusId",
+                            "type": "char",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "-",
+                            "partition": "-",
+                            "precision": "2"
+                        },
+                        {
+                            "sortOrder": 32,
+                            "columnName": "vatValue",
+                            "type": "numeric",
+                            "default": "-",
+                            "scale": "4",
+                            "required": "-",
+                            "notes": "-",
+                            "partition": "-",
+                            "precision": "5"
+                        },
+                        {
+                            "sortOrder": 33,
+                            "columnName": "customerImage",
+                            "type": "blob",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "-",
+                            "partition": "-",
+                            "precision": "2"
+                        },
+                        {
+                            "sortOrder": 34,
+                            "columnName": "bulk",
+                            "type": "int",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "-",
+                            "partition": "-",
+                            "precision": "4"
+                        },
+                        {
+                            "sortOrder": 35,
+                            "columnName": "zone",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "-",
+                            "partition": "-",
+                            "precision": "13"
+                        },
+                        {
+                            "sortOrder": 36,
+                            "columnName": "customerCodePrev",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "-",
+                            "partition": "-",
+                            "precision": "2"
+                        },
+                        {
+                            "sortOrder": 37,
+                            "columnName": "customerType",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "wheather customer is metered or non-metered. Value  metered, non-metered",
+                            "partition": "-",
+                            "precision": "14"
+                        },
+                        {
+                            "sortOrder": 38,
+                            "columnName": "bgdclSchemaName",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "From which schema this data pick",
+                            "partition": "-",
+                            "precision": "128"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "script": "07_02__legder.sql",
+            "tables": [
+                {
+                    "sortOrder": 9,
+                    "notes": "This table associated to hold cusotmer customer monthly bill information",
+                    "constraints": [
+                        {
+                            "check": "-",
+                            "columnName": "oid",
+                            "constraintType": "Primary",
+                            "reference": "-",
+                            "sortOrder": 1
+                        },
+                        {
+                            "check": "Success, Failed, Pending, OK, Approved, PaidRequestSent, PaidRequestSent",
+                            "columnName": "absBillStatus",
+                            "constraintType": "Check",
+                            "reference": "-",
+                            "sortOrder": 33
+                        }
+                    ],
+                    "tableName": "BgdclCustomerLedger",
+                    "partition": "-",
+                    "data": [],
+                    "columns": [
+                        {
+                            "sortOrder": 1,
+                            "columnName": "oid",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "Yes",
+                            "notes": "PRimary key (customerCode + billMonth + billYear)",
+                            "partition": "-",
+                            "precision": "128"
+                        },
+                        {
+                            "sortOrder": 2,
+                            "columnName": "customerCode",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Customer identification code",
+                            "partition": "-",
+                            "precision": "15"
+                        },
+                        {
+                            "sortOrder": 3,
+                            "columnName": "billMonth",
+                            "type": "char",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Month of bill",
+                            "partition": "-",
+                            "precision": "2"
+                        },
+                        {
+                            "sortOrder": 4,
+                            "columnName": "billYear",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Year of bill",
+                            "partition": "-",
+                            "precision": "4"
+                        },
+                        {
+                            "sortOrder": 5,
+                            "columnName": "issueDate",
+                            "type": "date",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "In which date bill created",
+                            "partition": "-",
+                            "precision": "-"
+                        },
+                        {
+                            "sortOrder": 6,
+                            "columnName": "lastDateOfPayment",
+                            "type": "date",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "After which date surcharge will be applicable",
+                            "partition": "-",
+                            "precision": "-"
+                        },
+                        {
+                            "sortOrder": 7,
+                            "columnName": "vat",
+                            "type": "numeric",
+                            "default": "-",
+                            "scale": "2",
+                            "required": "-",
+                            "notes": "Vat on bill",
+                            "partition": "-",
+                            "precision": "142"
+                        },
+                        {
+                            "sortOrder": 8,
+                            "columnName": "vatTopay",
+                            "type": "numeric",
+                            "default": "-",
+                            "scale": "2",
+                            "required": "-",
+                            "notes": "Vat has to pay",
+                            "partition": "-",
+                            "precision": "142"
+                        },
+                        {
+                            "sortOrder": 9,
+                            "columnName": "monthlyBillTopay",
+                            "type": "numeric",
+                            "default": "-",
+                            "scale": "2",
+                            "required": "-",
+                            "notes": "Bill amount need to pay by customer",
+                            "partition": "-",
+                            "precision": "142"
+                        },
+                        {
+                            "sortOrder": 10,
+                            "columnName": "monthlySurchargeTopay",
+                            "type": "numeric",
+                            "default": "-",
+                            "scale": "2",
+                            "required": "-",
+                            "notes": "Surchage amount need to pay by customer after last payment date ",
+                            "partition": "-",
+                            "precision": "142"
+                        },
+                        {
+                            "sortOrder": 11,
+                            "columnName": "monthlyBillPaid",
+                            "type": "numeric",
+                            "default": "-",
+                            "scale": "2",
+                            "required": "-",
+                            "notes": "Paid bill amount",
+                            "partition": "-",
+                            "precision": "142"
+                        },
+                        {
+                            "sortOrder": 12,
+                            "columnName": "monthlySurchargePaid",
+                            "type": "numeric",
+                            "default": "-",
+                            "scale": "2",
+                            "required": "-",
+                            "notes": "Paid surcharge amount",
+                            "partition": "-",
+                            "precision": "142"
+                        },
+                        {
+                            "sortOrder": 13,
+                            "columnName": "dateOfPayment",
+                            "type": "date",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Payment date",
+                            "partition": "-",
+                            "precision": "-"
+                        },
+                        {
+                            "sortOrder": 14,
+                            "columnName": "bankCode",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Third paryt code. Like Doer, South East bank.",
+                            "partition": "-",
+                            "precision": "8"
+                        },
+                        {
+                            "sortOrder": 15,
+                            "columnName": "connectionStatusId",
+                            "type": "char",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "-",
+                            "partition": "-",
+                            "precision": "2"
+                        },
+                        {
+                            "sortOrder": 16,
+                            "columnName": "billStatus",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Status of Bill. When paid status will be \"P\"",
+                            "partition": "-",
+                            "precision": "2"
+                        },
+                        {
+                            "sortOrder": 17,
+                            "columnName": "description",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "-",
+                            "partition": "-",
+                            "precision": "100"
+                        },
+                        {
+                            "sortOrder": 18,
+                            "columnName": "meterType",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "-",
+                            "partition": "-",
+                            "precision": "30"
+                        },
+                        {
+                            "sortOrder": 19,
+                            "columnName": "meterNumber",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "-",
+                            "partition": "-",
+                            "precision": "20"
+                        },
+                        {
+                            "sortOrder": 20,
+                            "columnName": "scrollNo",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "-",
+                            "partition": "-",
+                            "precision": "20"
+                        },
+                        {
+                            "sortOrder": 21,
+                            "columnName": "billNo",
+                            "type": "bigint",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "-",
+                            "partition": "-",
+                            "precision": "10"
+                        },
+                        {
+                            "sortOrder": 22,
+                            "columnName": "customerType",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "wheather customer is metered or non-metered. Value  metered, non-metered",
+                            "partition": "-",
+                            "precision": "14"
+                        },
+                        {
+                            "sortOrder": 23,
+                            "columnName": "csbrequestId",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "CSB request id",
+                            "partition": "-",
+                            "precision": "128"
+                        },
+                        {
+                            "sortOrder": 24,
+                            "columnName": "cbsReferenceno",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "CBS transaction reference no",
+                            "partition": "-",
+                            "precision": "128"
+                        },
+                        {
+                            "sortOrder": 25,
+                            "columnName": "traceId",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Trace id",
+                            "partition": "-",
+                            "precision": "128"
+                        },
+                        {
+                            "sortOrder": 26,
+                            "columnName": "paymentDate",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Date of payment",
+                            "partition": "-",
+                            "precision": "128"
+                        },
+                        {
+                            "sortOrder": 27,
+                            "columnName": "customerMobileNo",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Mobile number of a customer",
+                            "partition": "-",
+                            "precision": "128"
+                        },
+                        {
+                            "sortOrder": 28,
+                            "columnName": "absChargeAmount",
+                            "type": "numeric",
+                            "default": "-",
+                            "scale": "6",
+                            "required": "-",
+                            "notes": "Charge amount from abs",
+                            "partition": "-",
+                            "precision": "20"
+                        },
+                        {
+                            "sortOrder": 29,
+                            "columnName": "absVatAmount",
+                            "type": "numeric",
+                            "default": "-",
+                            "scale": "6",
+                            "required": "-",
+                            "notes": "Vat amount from abs",
+                            "partition": "-",
+                            "precision": "20"
+                        },
+                        {
+                            "sortOrder": 30,
+                            "columnName": "debitedAccount",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "From which account amount will be transfer",
+                            "partition": "-",
+                            "precision": "128"
+                        },
+                        {
+                            "sortOrder": 31,
+                            "columnName": "creditedAccount",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "To which account amount will be transfer",
+                            "partition": "-",
+                            "precision": "128"
+                        },
+                        {
+                            "sortOrder": 32,
+                            "columnName": "makerId",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Who made this bill",
+                            "partition": "-",
+                            "precision": "128"
+                        },
+                        {
+                            "sortOrder": 33,
+                            "columnName": "absBillStatus",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "ABS bill status",
+                            "partition": "-",
+                            "precision": "32"
+                        },
+                        {
+                            "sortOrder": 34,
+                            "columnName": "agentOid",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Oid of agent",
+                            "partition": "-",
+                            "precision": "128"
+                        },
+                        {
+                            "sortOrder": 35,
+                            "columnName": "servicepointOid",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Oid of servicepoint",
+                            "partition": "-",
+                            "precision": "128"
+                        },
+                        {
+                            "sortOrder": 36,
+                            "columnName": "serviceterminalOid",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Oid of serviceterminal",
+                            "partition": "-",
+                            "precision": "128"
+                        },
+                        {
+                            "sortOrder": 37,
+                            "columnName": "branchOid",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Oid of branch",
+                            "partition": "-",
+                            "precision": "128"
+                        },
+                        {
+                            "sortOrder": 38,
+                            "columnName": "bankOid",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Oid of bank",
+                            "partition": "-",
+                            "precision": "128"
+                        },
+                        {
+                            "sortOrder": 39,
+                            "columnName": "transactionDate",
+                            "type": "date",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Date of bill transaction",
+                            "partition": "-",
+                            "precision": "-"
+                        },
+                        {
+                            "sortOrder": 40,
+                            "columnName": "createdBy",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Who created",
+                            "partition": "-",
+                            "precision": "128"
+                        },
+                        {
+                            "sortOrder": 41,
+                            "columnName": "createdOn",
+                            "type": "timestamp",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "When created",
+                            "partition": "-",
+                            "precision": "-"
+                        },
+                        {
+                            "sortOrder": 42,
+                            "columnName": "updatedBy",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Who updated",
+                            "partition": "-",
+                            "precision": "128"
+                        },
+                        {
+                            "sortOrder": 43,
+                            "columnName": "updatedOn",
+                            "type": "timestamp",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "When updated",
+                            "partition": "-",
+                            "precision": "-"
+                        },
+                        {
+                            "sortOrder": 44,
+                            "columnName": "bgdclSchemaName",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "From which schema this data pick",
+                            "partition": "-",
+                            "precision": "128"
+                        }
+                    ]
+                },
+                {
+                    "sortOrder": 10,
+                    "notes": "This table associated to hold data migration history",
+                    "constraints": [
+                        {
+                            "check": "-",
+                            "columnName": "oid",
+                            "constraintType": "Primary",
+                            "reference": "-",
+                            "sortOrder": 44
+                        }
+                    ],
+                    "tableName": "BgdclMigrationLog",
+                    "partition": "-",
+                    "data": [],
+                    "columns": [
+                        {
+                            "sortOrder": 44,
+                            "columnName": "oid",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Surrogate primary key",
+                            "partition": "-",
+                            "precision": "128"
+                        },
+                        {
+                            "sortOrder": 45,
+                            "columnName": "dateTime",
+                            "type": "timestamp",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Data migration time",
+                            "partition": "-",
+                            "precision": "-"
+                        },
+                        {
+                            "sortOrder": 46,
+                            "columnName": "sourceTableName",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Source table",
+                            "partition": "-",
+                            "precision": "128"
+                        },
+                        {
+                            "sortOrder": 47,
+                            "columnName": "destinationTableName",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "destination table",
+                            "partition": "-",
+                            "precision": "128"
+                        },
+                        {
+                            "sortOrder": 48,
+                            "columnName": "sourceRowCount",
+                            "type": "numeric",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Source table data count",
+                            "partition": "-",
+                            "precision": "128"
+                        },
+                        {
+                            "sortOrder": 49,
+                            "columnName": "destinationRowCount",
+                            "type": "numeric",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "destination table data count",
+                            "partition": "-",
+                            "precision": "128"
+                        },
+                        {
+                            "sortOrder": 50,
+                            "columnName": "status",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Status of migration",
+                            "partition": "-",
+                            "precision": "32"
+                        },
+                        {
+                            "sortOrder": 51,
+                            "columnName": "executionTime",
+                            "type": "numeric",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "Migration time",
+                            "partition": "-",
+                            "precision": "128"
+                        },
+                        {
+                            "sortOrder": 52,
+                            "columnName": "bgdclSchemaName",
+                            "type": "varchar",
+                            "default": "-",
+                            "scale": "-",
+                            "required": "-",
+                            "notes": "From which schema this data pick",
+                            "partition": "-",
+                            "precision": "128"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

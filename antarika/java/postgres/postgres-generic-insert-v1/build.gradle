@@ -1,0 +1,11 @@
+dependencies {
+  compile project(':service-base')
+}
+
+sourceSets {
+	main {
+        java {
+            srcDirs =  ['src/main/java/insert-multiple', 'src/main/java/insert-single']
+        }
+    }
+}

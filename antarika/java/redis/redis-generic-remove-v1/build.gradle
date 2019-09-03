@@ -1,0 +1,12 @@
+dependencies {
+  compile project(':service-base')
+}
+
+
+sourceSets {
+	main {
+        java {
+            srcDirs =  ['src/main/java/remove-single']
+        }
+    }
+}

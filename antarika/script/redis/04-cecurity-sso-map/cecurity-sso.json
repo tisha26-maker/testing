@@ -1,0 +1,3385 @@
+{
+    "SERVICE": {
+        "drws": [
+            {
+                "portlets": [
+                    {
+                        "portlet": "Contacts",
+                        "items": [
+                            {
+                                "link-item": "Create Contact",
+                                "description": "View create contact form",
+                                "service-api": "-",
+                                "browser-url": "dashboard/create-contact"
+                            },
+                            {
+                                "link-item": "Create Contact",
+                                "description": "Create new contact",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Contact",
+                                "description": "Add/Save new contact",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Contact",
+                                "description": "View confirmation box for creating this new contact",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Contact",
+                                "description": "save confirmation to add contact",
+                                "service-api": "phonebook/contact/v1/create-contact",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Contact",
+                                "description": "cancel confirmation to add contact",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Contact",
+                                "description": "Reset contact form",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "List Contact",
+                                "description": "View Contact List",
+                                "service-api": "phonebook/contact/v1/list-contact",
+                                "browser-url": "dashboard/list-contact"
+                            },
+                            {
+                                "link-item": "List Contact",
+                                "description": "Go back to create contact",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "List Contact",
+                                "description": "Select branch name",
+                                "service-api": "phonebook/contact/v1/list-contact",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "List Contact",
+                                "description": "Select rows on page",
+                                "service-api": "phonebook/contact/v1/list-contact",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "List Contact",
+                                "description": "Go to view contact details",
+                                "service-api": "phonebook/contact/v1/get-contact",
+                                "browser-url": "-"
+                            }
+                        ]
+                    },
+                    {
+                        "portlet": "Groups",
+                        "items": [
+                            {
+                                "link-item": "Create Group",
+                                "description": "View create group form",
+                                "service-api": "-",
+                                "browser-url": "dashboard/create-group"
+                            },
+                            {
+                                "link-item": "Create Group",
+                                "description": "open contact list to add contacts to group",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Group",
+                                "description": "Select contacts",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Group",
+                                "description": "Add contacts",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Group",
+                                "description": "Cancel the modal",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Group",
+                                "description": "Add group",
+                                "service-api": "phonebook/contact-group/v1/create-group",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Group",
+                                "description": "Reset group form",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "List Group",
+                                "description": "View for group list",
+                                "service-api": "-",
+                                "browser-url": "dashboard/list-group"
+                            },
+                            {
+                                "link-item": "List Group",
+                                "description": "View group list by selecting branch",
+                                "service-api": "phonebook/contact-group/v1/list-group",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "List Group",
+                                "description": "View group list by selecting rows on page",
+                                "service-api": "phonebook/contact-group/v1/list-group",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "List Group",
+                                "description": "Go back to create group",
+                                "service-api": "-",
+                                "browser-url": "dashboard/create-group"
+                            },
+                            {
+                                "link-item": "List Group",
+                                "description": "View group details",
+                                "service-api": "phonebook/contact-group/v1/get-group",
+                                "browser-url": "dashboard/group-detail/oid"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "browser": {
+        "antarika": [
+            {
+                "portlets": [
+                    {
+                        "portlet": "-",
+                        "items": [
+                            {
+                                "link-item": "Antraika query browser",
+                                "description": "",
+                                "service-api": "",
+                                "browser-url": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "BRANCH.APPROVER": {
+        "abs": [
+            {
+                "portlets": [
+                    {
+                        "portlet": "",
+                        "items": [
+                            {
+                                "link-item": "Approve Customers",
+                                "description": "",
+                                "service-api": "get-approval-list",
+                                "browser-url": "approve-customers-list"
+                            },
+                            {
+                                "link-item": "Approve Customers",
+                                "description": "",
+                                "service-api": "-",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Approve Customers",
+                                "description": "",
+                                "service-api": "lock-to-approve",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Approve Customers",
+                                "description": "",
+                                "service-api": "get-by-oid-for-approval",
+                                "browser-url": "approve-customer-details"
+                            },
+                            {
+                                "link-item": "Approve Customers",
+                                "description": "",
+                                "service-api": "lock-to-approve",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Approve Customers",
+                                "description": "",
+                                "service-api": "-",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "",
+                                "service-api": "my-approval-list",
+                                "browser-url": "my-approve-list"
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "",
+                                "service-api": "-",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "",
+                                "service-api": "unlock-from-my-approval-list",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "",
+                                "service-api": "get-by-oid-to-approve",
+                                "browser-url": "my-approve-details"
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "",
+                                "service-api": "approve",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "",
+                                "service-api": "add-approver-remark",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "",
+                                "service-api": "",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Approve Accounts",
+                                "description": "",
+                                "service-api": "get-approval-list",
+                                "browser-url": "approve-accounts-list"
+                            },
+                            {
+                                "link-item": "Approve Accounts",
+                                "description": "",
+                                "service-api": "-",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Approve Accounts",
+                                "description": "",
+                                "service-api": "lock-to-approve",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Approve Accounts",
+                                "description": "",
+                                "service-api": "get-by-oid-for-approval",
+                                "browser-url": "approve-account-details"
+                            },
+                            {
+                                "link-item": "Approve Accounts",
+                                "description": "",
+                                "service-api": "lock-to-approve",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Approve Accounts",
+                                "description": "",
+                                "service-api": "-",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "",
+                                "service-api": "my-approval-list",
+                                "browser-url": "my-approve-list"
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "",
+                                "service-api": "-",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "",
+                                "service-api": "unlock-from-my-approval-list",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "",
+                                "service-api": "get-by-oid-to-approve",
+                                "browser-url": "my-approve-details"
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "",
+                                "service-api": "approve",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "",
+                                "service-api": "add-approver-remark",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "",
+                                "service-api": "",
+                                "browser-url": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "daily-summary": {
+        "antarika": [
+            {
+                "portlets": [
+                    {
+                        "portlet": "-",
+                        "items": [
+                            {
+                                "link-item": "Agent list",
+                                "description": "",
+                                "service-api": "",
+                                "browser-url": ""
+                            }
+                        ]
+                    },
+                    {
+                        "portlet": "agent-list",
+                        "items": [
+                            {
+                                "link-item": "Daily summary for an agent",
+                                "description": "",
+                                "service-api": "",
+                                "browser-url": ""
+                            }
+                        ]
+                    },
+                    {
+                        "portlet": "agent-list/agent-summary",
+                        "items": [
+                            {
+                                "link-item": "Email agent daily summary to agent",
+                                "description": "",
+                                "service-api": "",
+                                "browser-url": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "-": {
+        "antarika": [
+            {
+                "portlets": [
+                    {
+                        "portlet": "-",
+                        "items": [
+                            {
+                                "link-item": "Login page",
+                                "description": "",
+                                "service-api": "",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Landing page after login",
+                                "description": "",
+                                "service-api": "",
+                                "browser-url": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "collector": [
+            {
+                "portlets": [
+                    {
+                        "portlet": "-",
+                        "items": [
+                            {
+                                "link-item": "Login page",
+                                "description": "",
+                                "service-api": "",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Landing page after login",
+                                "description": "",
+                                "service-api": "",
+                                "browser-url": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "DOER.SYS.ADMIN": {
+        "ampere": [
+            {
+                "portlets": [
+                    {
+                        "portlet": "Service Terminal",
+                        "items": [
+                            {
+                                "link-item": "All Service Terminals",
+                                "description": "List of all approved service terminals",
+                                "service-api": "get-list",
+                                "browser-url": "service-terminal-list"
+                            },
+                            {
+                                "link-item": "All Service Terminals",
+                                "description": "Get approved service terminal record by OID",
+                                "service-api": "get-list",
+                                "browser-url": "service-terminal-details"
+                            },
+                            {
+                                "link-item": "All Service Terminals",
+                                "description": "Get approved service terminal record by OID",
+                                "service-api": "get-by-oid",
+                                "browser-url": "service-terminal-details"
+                            },
+                            {
+                                "link-item": "All Service Terminals",
+                                "description": "Back to previous page",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "All Service Terminals",
+                                "description": "List of all approved service terminals",
+                                "service-api": "get-list",
+                                "browser-url": "service-terminal-list"
+                            },
+                            {
+                                "link-item": "All Service Terminals",
+                                "description": "Get approved service terminal record by OID",
+                                "service-api": "get-by-oid",
+                                "browser-url": "service-terminal-details"
+                            },
+                            {
+                                "link-item": "All Service Terminals",
+                                "description": "Back to previous page",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "List of all new service terminals",
+                                "service-api": "get-new-list",
+                                "browser-url": "new-service-terminal-list"
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "List of all new service terminals",
+                                "service-api": "get-new-list",
+                                "browser-url": "new-service-terminal-list"
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "Get data by OID",
+                                "service-api": "get-new-by-oid",
+                                "browser-url": "new-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "Back to previous page",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "Lock for edit",
+                                "service-api": "lock-new",
+                                "browser-url": "new-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "Lock for edit",
+                                "service-api": "lock-new",
+                                "browser-url": "new-service-terminal-list"
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "Form will be appeared only",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "Cancel form",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "Save as Draft",
+                                "service-api": "save-as-draft",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "-",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "Service Terminal data saved as unauthorized",
+                                "service-api": "save-as-new",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "List of all new service terminals",
+                                "service-api": "get-new-list",
+                                "browser-url": "new-service-terminal-list"
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "Get data by OID",
+                                "service-api": "get-new-by-oid",
+                                "browser-url": "new-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "Back to previous page",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "Lock for edit",
+                                "service-api": "lock-new",
+                                "browser-url": "new-service-terminal-list"
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "",
+                                "service-api": "",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "Lock for edit",
+                                "service-api": "lock-new",
+                                "browser-url": "new-service-terminal-list"
+                            },
+                            {
+                                "link-item": "Edit Service Terminals",
+                                "description": "List of all data from live table and unauth table",
+                                "service-api": "get-editable-list",
+                                "browser-url": "edit-service-terminal-list"
+                            },
+                            {
+                                "link-item": "Edit Service Terminals",
+                                "description": "List of all data from live table and unauth table",
+                                "service-api": "get-editable-list",
+                                "browser-url": "edit-service-terminal-list"
+                            },
+                            {
+                                "link-item": "Edit Service Terminals",
+                                "description": "Get data by OID",
+                                "service-api": "get-editable-by-oid",
+                                "browser-url": "edit-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "Edit Service Terminals",
+                                "description": "Back to previous page",
+                                "service-api": "-",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Edit Service Terminals",
+                                "description": "Update some column of unauth table",
+                                "service-api": "lock-editable",
+                                "browser-url": "edit-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "Edit Service Terminals",
+                                "description": "",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Edit Service Terminals",
+                                "description": "Update some column of unauth table",
+                                "service-api": "lock-editable",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Edit Service Terminals",
+                                "description": "Deleted record which are come to edit",
+                                "service-api": "discard-edit",
+                                "browser-url": "edit-service-terminal-list"
+                            },
+                            {
+                                "link-item": "Edit Service Terminals",
+                                "description": "List of all data from live table and unauth table",
+                                "service-api": "get-editable-list",
+                                "browser-url": "edit-service-terminal-list"
+                            },
+                            {
+                                "link-item": "Edit Service Terminals",
+                                "description": "Get data by OID",
+                                "service-api": "get-editable-by-oid",
+                                "browser-url": "edit-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "Edit Service Terminals",
+                                "description": "Back to previous page",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Edit Service Terminals",
+                                "description": "Update some column of unauth table",
+                                "service-api": "lock-editable",
+                                "browser-url": "edit-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "Edit Service Terminals",
+                                "description": "",
+                                "service-api": "",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Edit Service Terminals",
+                                "description": "Update some column of unauth table",
+                                "service-api": "lock-editable",
+                                "browser-url": "edit-service-terminal-list"
+                            },
+                            {
+                                "link-item": "Edit Service Terminals",
+                                "description": "Deleted record which are come to edit",
+                                "service-api": "discard-edit",
+                                "browser-url": "edit-service-terminal-list"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "List of my edit list",
+                                "service-api": "my-editable-list",
+                                "browser-url": "my-editable-service-terminal-list"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "List of my edit list",
+                                "service-api": "my-editable-list",
+                                "browser-url": "my-editable-service-terminal-list"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "",
+                                "service-api": "",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "Update some column of unauth table",
+                                "service-api": "unlock-editable",
+                                "browser-url": "my-editable-service-terminal-list"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "Get data by OID",
+                                "service-api": "get-by-oid-for-edit",
+                                "browser-url": "my-editable-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "Update some column of unauth table",
+                                "service-api": "unlock-editable",
+                                "browser-url": "my-editable-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "Lost editing data",
+                                "service-api": "cancel-edit",
+                                "browser-url": "my-editable-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "",
+                                "service-api": "delete-edit",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "Save as unauthorized",
+                                "service-api": "save-work-in-progress",
+                                "browser-url": "my-editable-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "-",
+                                "service-api": "valildate",
+                                "browser-url": "my-editable-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "Update some column of unauth table",
+                                "service-api": "save-edit",
+                                "browser-url": "my-editable-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "List of my edit list",
+                                "service-api": "my-editable-list",
+                                "browser-url": "my-editable-service-terminal-list"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "",
+                                "service-api": "",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "Update some column of unauth table",
+                                "service-api": "unlock-editable",
+                                "browser-url": "my-editable-service-terminal-list"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "Get data by OID",
+                                "service-api": "get-by-oid-for-edit",
+                                "browser-url": "my-editable-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "Update some column of unauth table",
+                                "service-api": "unlock-editable",
+                                "browser-url": "my-editable-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "Lost editing data",
+                                "service-api": "cancel-edit",
+                                "browser-url": "my-editable-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "",
+                                "service-api": "delete-edit",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "Save as unauthorized",
+                                "service-api": "save-work-in-progress",
+                                "browser-url": "my-editable-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "-",
+                                "service-api": "valildate",
+                                "browser-url": "my-editable-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "Update some column of unauth table",
+                                "service-api": "save-edit",
+                                "browser-url": "my-editable-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "My Draft List",
+                                "description": "List of draft data",
+                                "service-api": "my-draft-list",
+                                "browser-url": "my-draft-list"
+                            },
+                            {
+                                "link-item": "My Draft List",
+                                "description": "List of draft data",
+                                "service-api": "my-draft-list",
+                                "browser-url": "my-draft-list"
+                            },
+                            {
+                                "link-item": "My Draft List",
+                                "description": "Permanently removed data",
+                                "service-api": "delete-draft",
+                                "browser-url": "my-draft-list"
+                            },
+                            {
+                                "link-item": "My Draft List",
+                                "description": "Get data by OID",
+                                "service-api": "get-draft-by-oid",
+                                "browser-url": "my-draft-details"
+                            },
+                            {
+                                "link-item": "My Draft List",
+                                "description": "-",
+                                "service-api": "N/A",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Draft List",
+                                "description": "Saved draft data",
+                                "service-api": "save-as-draft",
+                                "browser-url": "my-draft-details"
+                            },
+                            {
+                                "link-item": "My Draft List",
+                                "description": "-",
+                                "service-api": "valildate",
+                                "browser-url": "my-draft-details"
+                            },
+                            {
+                                "link-item": "My Draft List",
+                                "description": "Save data as unauthorized",
+                                "service-api": "save-as-new",
+                                "browser-url": "my-draft-details"
+                            },
+                            {
+                                "link-item": "My Draft List",
+                                "description": "List of draft data",
+                                "service-api": "my-draft-list",
+                                "browser-url": "my-draft-list"
+                            },
+                            {
+                                "link-item": "My Draft List",
+                                "description": "Permanently removed data",
+                                "service-api": "delete-draft",
+                                "browser-url": "my-draft-list"
+                            },
+                            {
+                                "link-item": "My Draft List",
+                                "description": "Get data by OID",
+                                "service-api": "get-draft-by-oid",
+                                "browser-url": "my-draft-details"
+                            },
+                            {
+                                "link-item": "My Draft List",
+                                "description": "-",
+                                "service-api": "N/A",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Draft List",
+                                "description": "Saved draft data",
+                                "service-api": "save-as-draft",
+                                "browser-url": "my-draft-details"
+                            },
+                            {
+                                "link-item": "My Draft List",
+                                "description": "-",
+                                "service-api": "valildate",
+                                "browser-url": "my-draft-details"
+                            },
+                            {
+                                "link-item": "My Draft List",
+                                "description": "Save data as unauthorized",
+                                "service-api": "save-as-new",
+                                "browser-url": "my-draft-details"
+                            },
+                            {
+                                "link-item": "Approve Service Terminals",
+                                "description": "List of unauthorized data",
+                                "service-api": "get-approval-list",
+                                "browser-url": "approval-service-terminal-list"
+                            },
+                            {
+                                "link-item": "Approve Service Terminals",
+                                "description": "List of unauthorized data",
+                                "service-api": "get-approval-list",
+                                "browser-url": "approval-service-terminal-list"
+                            },
+                            {
+                                "link-item": "Approve Service Terminals",
+                                "description": "",
+                                "service-api": "",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Approve Service Terminals",
+                                "description": "Update some column of unauth table",
+                                "service-api": "lock-for-approval",
+                                "browser-url": "approval-service-terminal-list"
+                            },
+                            {
+                                "link-item": "Approve Service Terminals",
+                                "description": "Get data by OID",
+                                "service-api": "get-by-oid-for-approval",
+                                "browser-url": "approval-service-terminal-details"
+                            },
+                            {
+                                "link-item": "Approve Service Terminals",
+                                "description": "Update some column of unauth table",
+                                "service-api": "lock-for-approval",
+                                "browser-url": "approval-service-terminal-details"
+                            },
+                            {
+                                "link-item": "Approve Service Terminals",
+                                "description": "Back to previous page",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Approve Service Terminals",
+                                "description": "List of unauthorized data",
+                                "service-api": "get-approval-list",
+                                "browser-url": "approval-service-terminal-list"
+                            },
+                            {
+                                "link-item": "Approve Service Terminals",
+                                "description": "",
+                                "service-api": "",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Approve Service Terminals",
+                                "description": "Update some column of unauth table",
+                                "service-api": "lock-for-approval",
+                                "browser-url": "approval-service-terminal-list"
+                            },
+                            {
+                                "link-item": "Approve Service Terminals",
+                                "description": "Get data by OID",
+                                "service-api": "get-by-oid-for-approval",
+                                "browser-url": "approval-service-terminal-details"
+                            },
+                            {
+                                "link-item": "Approve Service Terminals",
+                                "description": "Update some column of unauth table",
+                                "service-api": "lock-for-approval",
+                                "browser-url": "approval-service-terminal-list"
+                            },
+                            {
+                                "link-item": "Approve Service Terminals",
+                                "description": "Back to previous page",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "List of my approve list",
+                                "service-api": "get-my-approval-list",
+                                "browser-url": "my-approve-list"
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "List of my approve list",
+                                "service-api": "get-my-approval-list",
+                                "browser-url": "my-approve-list"
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "",
+                                "service-api": "",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "-",
+                                "service-api": "unlock-approval",
+                                "browser-url": "my-approve-list"
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "Get data by OID",
+                                "service-api": "get-by-oid-for-approval",
+                                "browser-url": "my-approve-details"
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "",
+                                "service-api": "unlock-approval",
+                                "browser-url": "my-approve-details"
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "-",
+                                "service-api": "N/A",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "Update with comments",
+                                "service-api": "add-approver-remark",
+                                "browser-url": "my-approve-details"
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "Data will be inserted to liveTable , deleted from unauthTable OR Data will be updated to liveTable , inserted to historyTable and deleted from unauthTable",
+                                "service-api": "approve",
+                                "browser-url": "my-approve-details"
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "List of my approve list",
+                                "service-api": "get-my-approval-list",
+                                "browser-url": "my-approve-list"
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "",
+                                "service-api": "",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "-",
+                                "service-api": "unlock-approval",
+                                "browser-url": "my-approve-list"
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "Get data by OID",
+                                "service-api": "get-by-oid-for-approval",
+                                "browser-url": "my-approve-details"
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "",
+                                "service-api": "unlock-approval",
+                                "browser-url": "my-approve-details"
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "-",
+                                "service-api": "N/A",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "Update with comments",
+                                "service-api": "add-approver-remark",
+                                "browser-url": "my-approve-details"
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "Data will be inserted to liveTable , deleted from unauthTable OR Data will be updated to liveTable , inserted to historyTable and deleted from unauthTable",
+                                "service-api": "approve",
+                                "browser-url": "my-approve-details"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "DOER.SYS.MAKER": {
+        "ampere": [
+            {
+                "portlets": [
+                    {
+                        "portlet": "Service Terminal",
+                        "items": [
+                            {
+                                "link-item": "All Service Terminals",
+                                "description": "List of all approved service terminals",
+                                "service-api": "get-list",
+                                "browser-url": "service-terminal-list"
+                            },
+                            {
+                                "link-item": "All Service Terminals",
+                                "description": "Get approved service terminal record by OID",
+                                "service-api": "get-list",
+                                "browser-url": "service-terminal-details"
+                            },
+                            {
+                                "link-item": "All Service Terminals",
+                                "description": "Get approved service terminal record by OID",
+                                "service-api": "get-by-oid",
+                                "browser-url": "service-terminal-details"
+                            },
+                            {
+                                "link-item": "All Service Terminals",
+                                "description": "Back to previous page",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "All Service Terminals",
+                                "description": "List of all approved service terminals",
+                                "service-api": "get-list",
+                                "browser-url": "service-terminal-list"
+                            },
+                            {
+                                "link-item": "All Service Terminals",
+                                "description": "Get approved service terminal record by OID",
+                                "service-api": "get-by-oid",
+                                "browser-url": "service-terminal-details"
+                            },
+                            {
+                                "link-item": "All Service Terminals",
+                                "description": "Back to previous page",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "List of all new service terminals",
+                                "service-api": "get-new-list",
+                                "browser-url": "new-service-terminal-list"
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "List of all new service terminals",
+                                "service-api": "get-new-list",
+                                "browser-url": "new-service-terminal-list"
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "Get data by OID",
+                                "service-api": "get-new-by-oid",
+                                "browser-url": "new-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "Back to previous page",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "Lock for edit",
+                                "service-api": "lock-new",
+                                "browser-url": "new-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "Lock for edit",
+                                "service-api": "lock-new",
+                                "browser-url": "new-service-terminal-list"
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "Form will be appeared only",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "Cancel form",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "Save as Draft",
+                                "service-api": "save-as-draft",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "-",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "Service Terminal data saved as unauthorized",
+                                "service-api": "save-as-new",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "List of all new service terminals",
+                                "service-api": "get-new-list",
+                                "browser-url": "new-service-terminal-list"
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "Get data by OID",
+                                "service-api": "get-new-by-oid",
+                                "browser-url": "new-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "Back to previous page",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "Lock for edit",
+                                "service-api": "lock-new",
+                                "browser-url": "new-service-terminal-list"
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "",
+                                "service-api": "",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "New Service Terminals",
+                                "description": "Lock for edit",
+                                "service-api": "lock-new",
+                                "browser-url": "new-service-terminal-list"
+                            },
+                            {
+                                "link-item": "Edit Service Terminals",
+                                "description": "List of all data from live table and unauth table",
+                                "service-api": "get-editable-list",
+                                "browser-url": "edit-service-terminal-list"
+                            },
+                            {
+                                "link-item": "Edit Service Terminals",
+                                "description": "List of all data from live table and unauth table",
+                                "service-api": "get-editable-list",
+                                "browser-url": "edit-service-terminal-list"
+                            },
+                            {
+                                "link-item": "Edit Service Terminals",
+                                "description": "Get data by OID",
+                                "service-api": "get-editable-by-oid",
+                                "browser-url": "edit-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "Edit Service Terminals",
+                                "description": "Back to previous page",
+                                "service-api": "-",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Edit Service Terminals",
+                                "description": "Update some column of unauth table",
+                                "service-api": "lock-editable",
+                                "browser-url": "edit-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "Edit Service Terminals",
+                                "description": "",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Edit Service Terminals",
+                                "description": "Update some column of unauth table",
+                                "service-api": "lock-editable",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Edit Service Terminals",
+                                "description": "List of all data from live table and unauth table",
+                                "service-api": "get-editable-list",
+                                "browser-url": "edit-service-terminal-list"
+                            },
+                            {
+                                "link-item": "Edit Service Terminals",
+                                "description": "Get data by OID",
+                                "service-api": "get-editable-by-oid",
+                                "browser-url": "edit-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "Edit Service Terminals",
+                                "description": "Back to previous page",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Edit Service Terminals",
+                                "description": "Update some column of unauth table",
+                                "service-api": "lock-editable",
+                                "browser-url": "edit-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "Edit Service Terminals",
+                                "description": "",
+                                "service-api": "",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Edit Service Terminals",
+                                "description": "Update some column of unauth table",
+                                "service-api": "lock-editable",
+                                "browser-url": "edit-service-terminal-list"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "List of my edit list",
+                                "service-api": "my-editable-list",
+                                "browser-url": "my-editable-service-terminal-list"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "List of my edit list",
+                                "service-api": "my-editable-list",
+                                "browser-url": "my-editable-service-terminal-list"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "",
+                                "service-api": "",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "Update some column of unauth table",
+                                "service-api": "unlock-editable",
+                                "browser-url": "my-editable-service-terminal-list"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "Get data by OID",
+                                "service-api": "get-by-oid-for-edit",
+                                "browser-url": "my-editable-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "Update some column of unauth table",
+                                "service-api": "unlock-editable",
+                                "browser-url": "my-editable-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "Lost editing data",
+                                "service-api": "cancel-edit",
+                                "browser-url": "my-editable-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "",
+                                "service-api": "delete-edit",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "Save as unauthorized",
+                                "service-api": "save-work-in-progress",
+                                "browser-url": "my-editable-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "-",
+                                "service-api": "valildate",
+                                "browser-url": "my-editable-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "Update some column of unauth table",
+                                "service-api": "save-edit",
+                                "browser-url": "my-editable-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "List of my edit list",
+                                "service-api": "my-editable-list",
+                                "browser-url": "my-editable-service-terminal-list"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "",
+                                "service-api": "",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "Update some column of unauth table",
+                                "service-api": "unlock-editable",
+                                "browser-url": "my-editable-service-terminal-list"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "Get data by OID",
+                                "service-api": "get-by-oid-for-edit",
+                                "browser-url": "my-editable-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "Update some column of unauth table",
+                                "service-api": "unlock-editable",
+                                "browser-url": "my-editable-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "Lost editing data",
+                                "service-api": "cancel-edit",
+                                "browser-url": "my-editable-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "",
+                                "service-api": "delete-edit",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "Save as unauthorized",
+                                "service-api": "save-work-in-progress",
+                                "browser-url": "my-editable-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "-",
+                                "service-api": "valildate",
+                                "browser-url": "my-editable-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "Update some column of unauth table",
+                                "service-api": "save-edit",
+                                "browser-url": "my-editable-service-terminal-detaills"
+                            },
+                            {
+                                "link-item": "My Draft List",
+                                "description": "List of draft data",
+                                "service-api": "my-draft-list",
+                                "browser-url": "my-draft-list"
+                            },
+                            {
+                                "link-item": "My Draft List",
+                                "description": "List of draft data",
+                                "service-api": "my-draft-list",
+                                "browser-url": "my-draft-list"
+                            },
+                            {
+                                "link-item": "My Draft List",
+                                "description": "Permanently removed data",
+                                "service-api": "delete-draft",
+                                "browser-url": "my-draft-list"
+                            },
+                            {
+                                "link-item": "My Draft List",
+                                "description": "Get data by OID",
+                                "service-api": "get-draft-by-oid",
+                                "browser-url": "my-draft-details"
+                            },
+                            {
+                                "link-item": "My Draft List",
+                                "description": "-",
+                                "service-api": "N/A",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Draft List",
+                                "description": "Saved draft data",
+                                "service-api": "save-as-draft",
+                                "browser-url": "my-draft-details"
+                            },
+                            {
+                                "link-item": "My Draft List",
+                                "description": "-",
+                                "service-api": "valildate",
+                                "browser-url": "my-draft-details"
+                            },
+                            {
+                                "link-item": "My Draft List",
+                                "description": "Save data as unauthorized",
+                                "service-api": "save-as-new",
+                                "browser-url": "my-draft-details"
+                            },
+                            {
+                                "link-item": "My Draft List",
+                                "description": "List of draft data",
+                                "service-api": "my-draft-list",
+                                "browser-url": "my-draft-list"
+                            },
+                            {
+                                "link-item": "My Draft List",
+                                "description": "Permanently removed data",
+                                "service-api": "delete-draft",
+                                "browser-url": "my-draft-list"
+                            },
+                            {
+                                "link-item": "My Draft List",
+                                "description": "Get data by OID",
+                                "service-api": "get-draft-by-oid",
+                                "browser-url": "my-draft-details"
+                            },
+                            {
+                                "link-item": "My Draft List",
+                                "description": "-",
+                                "service-api": "N/A",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Draft List",
+                                "description": "Saved draft data",
+                                "service-api": "save-as-draft",
+                                "browser-url": "my-draft-details"
+                            },
+                            {
+                                "link-item": "My Draft List",
+                                "description": "-",
+                                "service-api": "valildate",
+                                "browser-url": "my-draft-details"
+                            },
+                            {
+                                "link-item": "My Draft List",
+                                "description": "Save data as unauthorized",
+                                "service-api": "save-as-new",
+                                "browser-url": "my-draft-details"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "abs": [
+            {
+                "portlets": [
+                    {
+                        "portlet": "",
+                        "items": [
+                            {
+                                "link-item": "Application Received",
+                                "description": "List all customers from draft table in default view",
+                                "service-api": "get-draft-list",
+                                "browser-url": "received-customer-list"
+                            },
+                            {
+                                "link-item": "Application Received",
+                                "description": "Select customers using checkbox",
+                                "service-api": "-",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Application Received",
+                                "description": "Delete selected customer",
+                                "service-api": "delete-draft-by-oid",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Application Received",
+                                "description": "Click on row to view customer details",
+                                "service-api": "get-draft-by-oid",
+                                "browser-url": "draft-customer-details"
+                            },
+                            {
+                                "link-item": "Application Received",
+                                "description": "Delete from view details page",
+                                "service-api": "delete-draft-by-oid",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Application Received",
+                                "description": "Go back to list view of All customer",
+                                "service-api": "-",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "New customers",
+                                "description": "List all new customers from live table who are not yet bank approved in default view",
+                                "service-api": "get-new-list",
+                                "browser-url": "new-customers-list"
+                            },
+                            {
+                                "link-item": "New customers",
+                                "description": "Select customers using checkbox",
+                                "service-api": "-",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "New customers",
+                                "description": "Lock selected customer",
+                                "service-api": "lock-new",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "New customers",
+                                "description": "Click on row to view customer details",
+                                "service-api": "",
+                                "browser-url": "new-customer-details"
+                            },
+                            {
+                                "link-item": "New customers",
+                                "description": "Lock from view details page",
+                                "service-api": "lock-new",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "New customers",
+                                "description": "Go back to list view",
+                                "service-api": "-",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My New List",
+                                "description": "",
+                                "service-api": "my-new-list",
+                                "browser-url": "my-update-list"
+                            },
+                            {
+                                "link-item": "My New List",
+                                "description": "",
+                                "service-api": "-",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My New List",
+                                "description": "",
+                                "service-api": "unlock-new",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My New List",
+                                "description": "",
+                                "service-api": "get-new-by-oid-for-input",
+                                "browser-url": "edit-new-customer"
+                            },
+                            {
+                                "link-item": "My New List",
+                                "description": "",
+                                "service-api": "cancel-new",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My New List",
+                                "description": "",
+                                "service-api": "validate-new",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My New List",
+                                "description": "",
+                                "service-api": "save-new",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My New List",
+                                "description": "",
+                                "service-api": "save-new-work-in-progress",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Application Received",
+                                "description": "List all account from draft table in default view",
+                                "service-api": "get-draft-list",
+                                "browser-url": "received-account-list"
+                            },
+                            {
+                                "link-item": "Application Received",
+                                "description": "Select account using checkbox",
+                                "service-api": "-",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Application Received",
+                                "description": "Delete selected account",
+                                "service-api": "delete-draft-by-oid",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Application Received",
+                                "description": "Click on row to view account details",
+                                "service-api": "get-draft-by-oid",
+                                "browser-url": "draft-account-details"
+                            },
+                            {
+                                "link-item": "Application Received",
+                                "description": "Delete from view details page",
+                                "service-api": "delete-draft-by-oid",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Application Received",
+                                "description": "Go back to list view of All account",
+                                "service-api": "-",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "New Accounts",
+                                "description": "List all new accounts from live table who are not yet bank approved in default view",
+                                "service-api": "get-new-list",
+                                "browser-url": "new-accounts-list"
+                            },
+                            {
+                                "link-item": "New Accounts",
+                                "description": "Select accounts using checkbox",
+                                "service-api": "-",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "New Accounts",
+                                "description": "Lock selected account",
+                                "service-api": "lock-new",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "New Accounts",
+                                "description": "Click on row to view account details",
+                                "service-api": "",
+                                "browser-url": "new-account-details"
+                            },
+                            {
+                                "link-item": "New Accounts",
+                                "description": "Lock from view details page",
+                                "service-api": "lock-new",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "New Accounts",
+                                "description": "Go back to list view",
+                                "service-api": "-",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My New List",
+                                "description": "",
+                                "service-api": "my-new-list",
+                                "browser-url": "my-update-list"
+                            },
+                            {
+                                "link-item": "My New List",
+                                "description": "",
+                                "service-api": "-",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My New List",
+                                "description": "",
+                                "service-api": "unlock-new",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My New List",
+                                "description": "",
+                                "service-api": "get-new-by-oid-for-input",
+                                "browser-url": "edit-new-account"
+                            },
+                            {
+                                "link-item": "My New List",
+                                "description": "",
+                                "service-api": "cancel-new",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My New List",
+                                "description": "",
+                                "service-api": "validate-new",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My New List",
+                                "description": "",
+                                "service-api": "save-new",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My New List",
+                                "description": "",
+                                "service-api": "save-new-work-in-progress",
+                                "browser-url": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "drws": [
+            {
+                "portlets": [
+                    {
+                        "portlet": "Contacts",
+                        "items": [
+                            {
+                                "link-item": "Create Contact",
+                                "description": "View create contact form",
+                                "service-api": "-",
+                                "browser-url": "dashboard/create-contact"
+                            },
+                            {
+                                "link-item": "Create Contact",
+                                "description": "Create new contact",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Contact",
+                                "description": "Add/Save new contact",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Contact",
+                                "description": "View confirmation box for creating this new contact",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Contact",
+                                "description": "save confirmation to add contact",
+                                "service-api": "phonebook/contact/v1/create-contact",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Contact",
+                                "description": "cancel confirmation to add contact",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Contact",
+                                "description": "Reset contact form",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "List Contact",
+                                "description": "View Contact List",
+                                "service-api": "phonebook/contact/v1/list-contact",
+                                "browser-url": "dashboard/list-contact"
+                            },
+                            {
+                                "link-item": "List Contact",
+                                "description": "Go back to create contact",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "List Contact",
+                                "description": "Select branch name",
+                                "service-api": "phonebook/contact/v1/list-contact",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "List Contact",
+                                "description": "Select rows on page",
+                                "service-api": "phonebook/contact/v1/list-contact",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "List Contact",
+                                "description": "Go to view contact details",
+                                "service-api": "phonebook/contact/v1/get-contact",
+                                "browser-url": "-"
+                            }
+                        ]
+                    },
+                    {
+                        "portlet": "Groups",
+                        "items": [
+                            {
+                                "link-item": "Create Group",
+                                "description": "View create group form",
+                                "service-api": "-",
+                                "browser-url": "dashboard/create-group"
+                            },
+                            {
+                                "link-item": "Create Group",
+                                "description": "open contact list to add contacts to group",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Group",
+                                "description": "Select contacts",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Group",
+                                "description": "Add contacts",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Group",
+                                "description": "Cancel the modal",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Group",
+                                "description": "Add group",
+                                "service-api": "phonebook/contact-group/v1/create-group",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Group",
+                                "description": "Reset group form",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "List Group",
+                                "description": "View for group list",
+                                "service-api": "-",
+                                "browser-url": "dashboard/list-group"
+                            },
+                            {
+                                "link-item": "List Group",
+                                "description": "View group list by selecting branch",
+                                "service-api": "phonebook/contact-group/v1/list-group",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "List Group",
+                                "description": "View group list by selecting rows on page",
+                                "service-api": "phonebook/contact-group/v1/list-group",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "List Group",
+                                "description": "Go back to create group",
+                                "service-api": "-",
+                                "browser-url": "dashboard/create-group"
+                            },
+                            {
+                                "link-item": "List Group",
+                                "description": "View group details",
+                                "service-api": "phonebook/contact-group/v1/get-group",
+                                "browser-url": "dashboard/group-detail/oid"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "DOER.SYS.APPROVER": {
+        "ampere": [
+            {
+                "portlets": [
+                    {
+                        "portlet": "Service Terminal",
+                        "items": [
+                            {
+                                "link-item": "All Service Terminals",
+                                "description": "List of all approved service terminals",
+                                "service-api": "get-list",
+                                "browser-url": "service-terminal-list"
+                            },
+                            {
+                                "link-item": "All Service Terminals",
+                                "description": "Get approved service terminal record by OID",
+                                "service-api": "get-list",
+                                "browser-url": "service-terminal-details"
+                            },
+                            {
+                                "link-item": "All Service Terminals",
+                                "description": "Get approved service terminal record by OID",
+                                "service-api": "get-by-oid",
+                                "browser-url": "service-terminal-details"
+                            },
+                            {
+                                "link-item": "All Service Terminals",
+                                "description": "Back to previous page",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "All Service Terminals",
+                                "description": "List of all approved service terminals",
+                                "service-api": "get-list",
+                                "browser-url": "service-terminal-list"
+                            },
+                            {
+                                "link-item": "All Service Terminals",
+                                "description": "Get approved service terminal record by OID",
+                                "service-api": "get-by-oid",
+                                "browser-url": "service-terminal-details"
+                            },
+                            {
+                                "link-item": "All Service Terminals",
+                                "description": "Back to previous page",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Approve Service Terminals",
+                                "description": "List of unauthorized data",
+                                "service-api": "get-approval-list",
+                                "browser-url": "approval-service-terminal-list"
+                            },
+                            {
+                                "link-item": "Approve Service Terminals",
+                                "description": "List of unauthorized data",
+                                "service-api": "get-approval-list",
+                                "browser-url": "approval-service-terminal-list"
+                            },
+                            {
+                                "link-item": "Approve Service Terminals",
+                                "description": "",
+                                "service-api": "",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Approve Service Terminals",
+                                "description": "Update some column of unauth table",
+                                "service-api": "lock-for-approval",
+                                "browser-url": "approval-service-terminal-list"
+                            },
+                            {
+                                "link-item": "Approve Service Terminals",
+                                "description": "Get data by OID",
+                                "service-api": "get-by-oid-for-approval",
+                                "browser-url": "approval-service-terminal-details"
+                            },
+                            {
+                                "link-item": "Approve Service Terminals",
+                                "description": "Update some column of unauth table",
+                                "service-api": "lock-for-approval",
+                                "browser-url": "approval-service-terminal-details"
+                            },
+                            {
+                                "link-item": "Approve Service Terminals",
+                                "description": "Back to previous page",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Approve Service Terminals",
+                                "description": "List of unauthorized data",
+                                "service-api": "get-approval-list",
+                                "browser-url": "approval-service-terminal-list"
+                            },
+                            {
+                                "link-item": "Approve Service Terminals",
+                                "description": "",
+                                "service-api": "",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Approve Service Terminals",
+                                "description": "Update some column of unauth table",
+                                "service-api": "lock-for-approval",
+                                "browser-url": "approval-service-terminal-list"
+                            },
+                            {
+                                "link-item": "Approve Service Terminals",
+                                "description": "Get data by OID",
+                                "service-api": "get-by-oid-for-approval",
+                                "browser-url": "approval-service-terminal-details"
+                            },
+                            {
+                                "link-item": "Approve Service Terminals",
+                                "description": "Update some column of unauth table",
+                                "service-api": "lock-for-approval",
+                                "browser-url": "approval-service-terminal-list"
+                            },
+                            {
+                                "link-item": "Approve Service Terminals",
+                                "description": "Back to previous page",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "List of my approve list",
+                                "service-api": "get-my-approval-list",
+                                "browser-url": "my-approve-list"
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "List of my approve list",
+                                "service-api": "get-my-approval-list",
+                                "browser-url": "my-approve-list"
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "",
+                                "service-api": "",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "-",
+                                "service-api": "unlock-approval",
+                                "browser-url": "my-approve-list"
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "Get data by OID",
+                                "service-api": "get-by-oid-for-approval",
+                                "browser-url": "my-approve-details"
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "",
+                                "service-api": "unlock-approval",
+                                "browser-url": "my-approve-details"
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "-",
+                                "service-api": "N/A",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "Update with comments",
+                                "service-api": "add-approver-remark",
+                                "browser-url": "my-approve-details"
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "Data will be inserted to liveTable , deleted from unauthTable OR Data will be updated to liveTable , inserted to historyTable and deleted from unauthTable",
+                                "service-api": "approve",
+                                "browser-url": "my-approve-details"
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "List of my approve list",
+                                "service-api": "get-my-approval-list",
+                                "browser-url": "my-approve-list"
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "",
+                                "service-api": "",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "-",
+                                "service-api": "unlock-approval",
+                                "browser-url": "my-approve-list"
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "Get data by OID",
+                                "service-api": "get-by-oid-for-approval",
+                                "browser-url": "my-approve-details"
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "",
+                                "service-api": "unlock-approval",
+                                "browser-url": "my-approve-details"
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "-",
+                                "service-api": "N/A",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "Update with comments",
+                                "service-api": "add-approver-remark",
+                                "browser-url": "my-approve-details"
+                            },
+                            {
+                                "link-item": "My Approve List",
+                                "description": "Data will be inserted to liveTable , deleted from unauthTable OR Data will be updated to liveTable , inserted to historyTable and deleted from unauthTable",
+                                "service-api": "approve",
+                                "browser-url": "my-approve-details"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "abs": [
+            {
+                "portlets": [
+                    {
+                        "portlet": "",
+                        "items": [
+                            {
+                                "link-item": "Check New Customers",
+                                "description": "List all new customers from unauth table whose data is updated and waiting for approval in default view",
+                                "service-api": "get-check-list",
+                                "browser-url": "new-updated-customers-list"
+                            },
+                            {
+                                "link-item": "Check New Customers",
+                                "description": "Select customers using checkbox",
+                                "service-api": "-",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Check New Customers",
+                                "description": "Lock selected customer for Approve",
+                                "service-api": "get-check-list",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Check New Customers",
+                                "description": "Click on row to view customer details",
+                                "service-api": "",
+                                "browser-url": "new-updated-customer-details"
+                            },
+                            {
+                                "link-item": "Check New Customers",
+                                "description": "Lock from view details page",
+                                "service-api": "lock-to-check",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Check New Customers",
+                                "description": "Go back to list view",
+                                "service-api": "-",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Check List",
+                                "description": "",
+                                "service-api": "my-check-list",
+                                "browser-url": "my-update-approval-list"
+                            },
+                            {
+                                "link-item": "My Check List",
+                                "description": "",
+                                "service-api": "-",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Check List",
+                                "description": "",
+                                "service-api": "unlock-from-my-checklist",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Check List",
+                                "description": "",
+                                "service-api": "get-by-oid-to-check",
+                                "browser-url": "update-approval-details"
+                            },
+                            {
+                                "link-item": "My Check List",
+                                "description": "",
+                                "service-api": "checked-new-input",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Check List",
+                                "description": "",
+                                "service-api": "add-checker-remark",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Check List",
+                                "description": "",
+                                "service-api": "",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Check New Accounts",
+                                "description": "List all new accounts from unauth table whose data is updated and waiting for approval in default view",
+                                "service-api": "get-check-list",
+                                "browser-url": "new-updated-accounts-list"
+                            },
+                            {
+                                "link-item": "Check New Accounts",
+                                "description": "Select accounts using checkbox",
+                                "service-api": "-",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Check New Accounts",
+                                "description": "Lock selected account for Approve",
+                                "service-api": "get-check-list",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Check New Accounts",
+                                "description": "Click on row to view account details",
+                                "service-api": "",
+                                "browser-url": "new-updated-account-details"
+                            },
+                            {
+                                "link-item": "Check New Accounts",
+                                "description": "Lock from view details page",
+                                "service-api": "lock-to-check",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Check New Accounts",
+                                "description": "Go back to list view",
+                                "service-api": "-",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Check List",
+                                "description": "",
+                                "service-api": "my-check-list",
+                                "browser-url": "my-update-approval-list"
+                            },
+                            {
+                                "link-item": "My Check List",
+                                "description": "",
+                                "service-api": "-",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Check List",
+                                "description": "",
+                                "service-api": "unlock-from-my-checklist",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Check List",
+                                "description": "",
+                                "service-api": "get-by-oid-to-check",
+                                "browser-url": "update-approval-details"
+                            },
+                            {
+                                "link-item": "My Check List",
+                                "description": "",
+                                "service-api": "checked-new-input",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Check List",
+                                "description": "",
+                                "service-api": "add-checker-remark",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Check List",
+                                "description": "",
+                                "service-api": "",
+                                "browser-url": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "*": {
+        "ampere": [
+            {
+                "portlets": [
+                    {
+                        "portlet": "-",
+                        "items": [
+                            {
+                                "link-item": "-",
+                                "description": "Login page",
+                                "service-api": "login",
+                                "browser-url": "login"
+                            },
+                            {
+                                "link-item": "-",
+                                "description": "Landing page after login",
+                                "service-api": "home",
+                                "browser-url": "dashboard"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "abs": [
+            {
+                "portlets": [
+                    {
+                        "portlet": "-",
+                        "items": [
+                            {
+                                "link-item": "-",
+                                "description": "Login page",
+                                "service-api": "/cecurity/authentication/user/v1/authenticate-user, /ampere/agent-network/enquiry/v1/get-info-by-login-id",
+                                "browser-url": "login"
+                            },
+                            {
+                                "link-item": "-",
+                                "description": "Landing page after login",
+                                "service-api": "-",
+                                "browser-url": "/"
+                            }
+                        ]
+                    },
+                    {
+                        "portlet": "",
+                        "items": [
+                            {
+                                "link-item": "All customers",
+                                "description": "List all customers from live table in default view",
+                                "service-api": "get-list",
+                                "browser-url": "customer-list"
+                            },
+                            {
+                                "link-item": "All customers",
+                                "description": "List all customers from live table in list view",
+                                "service-api": "get-list",
+                                "browser-url": "customer-list"
+                            },
+                            {
+                                "link-item": "All customers",
+                                "description": "Click on a single row to view details for customer",
+                                "service-api": "get-by-oid",
+                                "browser-url": "customer-detail"
+                            },
+                            {
+                                "link-item": "All customers",
+                                "description": "Go back to list view of All customer",
+                                "service-api": "-",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "All customers",
+                                "description": "List all customers from live table in card view",
+                                "service-api": "get-list",
+                                "browser-url": "customer-list"
+                            },
+                            {
+                                "link-item": "All customers",
+                                "description": "Click on view details button to view details for customer",
+                                "service-api": "get-by-oid",
+                                "browser-url": "customer-detail"
+                            },
+                            {
+                                "link-item": "All customers",
+                                "description": "Go back to card view of All customer",
+                                "service-api": "-",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "All Account",
+                                "description": "List all account from live table in default view",
+                                "service-api": "get-list",
+                                "browser-url": "account-list"
+                            },
+                            {
+                                "link-item": "All Account",
+                                "description": "List all account from live table in list view",
+                                "service-api": "get-list",
+                                "browser-url": "account-list"
+                            },
+                            {
+                                "link-item": "All Account",
+                                "description": "Click on a single row to view details for account",
+                                "service-api": "get-by-oid",
+                                "browser-url": "account-detail"
+                            },
+                            {
+                                "link-item": "All Account",
+                                "description": "Go back to list view of All account",
+                                "service-api": "-",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "All Account",
+                                "description": "List all account from live table in card view",
+                                "service-api": "get-list",
+                                "browser-url": "account-list"
+                            },
+                            {
+                                "link-item": "All Account",
+                                "description": "Click on view details button to view details for account",
+                                "service-api": "get-by-oid",
+                                "browser-url": "account-detail"
+                            },
+                            {
+                                "link-item": "All Account",
+                                "description": "Go back to card view of All account",
+                                "service-api": "-",
+                                "browser-url": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "drws": [
+            {
+                "portlets": [
+                    {
+                        "portlet": "",
+                        "items": [
+                            {
+                                "link-item": "-",
+                                "description": "First authontiacate application and client then view login page",
+                                "service-api": "/cecurity/authentication/application/v1/authenticate-application,\n /cecurity/authentication/client/v1/authenticate-client",
+                                "browser-url": "login"
+                            },
+                            {
+                                "link-item": "-",
+                                "description": "Login page",
+                                "service-api": "/cecurity/authentication/user/v1/authenticate-user",
+                                "browser-url": "login"
+                            },
+                            {
+                                "link-item": "-",
+                                "description": "Landing page after login",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "View-contact",
+                                "description": "View contact details in form view",
+                                "service-api": "-",
+                                "browser-url": "dashboard/contact-detail/oid"
+                            },
+                            {
+                                "link-item": "View-contact",
+                                "description": "Enable edit contact information",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Edit-contact",
+                                "description": "Save updated contact",
+                                "service-api": "phonebook/contact/v1/edit-contact",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Edit-contact",
+                                "description": "Cancel edit information of contact",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "View-contact",
+                                "description": "Go back to list view of contact ",
+                                "service-api": "phonebook/contact/v1/list-contact",
+                                "browser-url": "dashboard/contact-list"
+                            },
+                            {
+                                "link-item": "Remove-contact",
+                                "description": "Delete contact",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Remove-contact",
+                                "description": "View a Confrimation box",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Remove-contact",
+                                "description": "Delete contact",
+                                "service-api": "phonebook/contact/v1/remove-contact",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Remove-contact",
+                                "description": "Cancel delete contact",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create-favourite",
+                                "description": "Add contact to favourite list",
+                                "service-api": "phonebook/favourite/v1/add-favourite",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create-favourite",
+                                "description": "Remove contact from favourite list",
+                                "service-api": "phonebook/favourite/v1/remove-favourite",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "View-group",
+                                "description": "Enable Edit group",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Edit-group",
+                                "description": "Pop up modal to add contacts",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Edit-group",
+                                "description": "Select contacts",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Edit-group",
+                                "description": "Add contacts",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Edit-group",
+                                "description": "Cancel modal",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Edit-group",
+                                "description": "Remove contacts from group",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Edit-group",
+                                "description": "Save updated group",
+                                "service-api": "phonebook/contact-group/v1/edit-group",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Edit-group",
+                                "description": "Cancel group edit",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Edit-group",
+                                "description": "Go back to group list",
+                                "service-api": "phonebook/contact-group/v1/list-group",
+                                "browser-url": "dashboard/list-group"
+                            },
+                            {
+                                "link-item": "Remove-group",
+                                "description": "View a Confrimation box",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Remove-group",
+                                "description": "Delete a group",
+                                "service-api": "phonebook/contact-group/v1/delete-group",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Remove-group",
+                                "description": "Cancel delete group",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "List Favourite",
+                                "description": "View favourite list",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "List Favourite",
+                                "description": "Select branch to view favourite list",
+                                "service-api": "phonebook/favourite/v1/list-favourite",
+                                "browser-url": "dashboard/list-favourite"
+                            },
+                            {
+                                "link-item": "List Favourite",
+                                "description": "Show confirmation box to delete from favourite list",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "List Favourite",
+                                "description": "Delete from favourite list",
+                                "service-api": "phonebook/favourite/v1/remove-favourite",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "List Favourite",
+                                "description": "Cancel delete",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Template",
+                                "description": "View create template form",
+                                "service-api": "-",
+                                "browser-url": "dashboard/create-template"
+                            },
+                            {
+                                "link-item": "Create Template",
+                                "description": "Drag parameters in text area",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Template",
+                                "description": "Pop up modal to add template",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Template",
+                                "description": "Save template",
+                                "service-api": "template/sms/v1/create-template",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Template",
+                                "description": "Cancel create template",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Template",
+                                "description": "Reset create template form",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "List Template",
+                                "description": "View for template list",
+                                "service-api": "template/sms/v1/list-template",
+                                "browser-url": "dashboard/list-template"
+                            },
+                            {
+                                "link-item": "List Template",
+                                "description": "Select rows on page",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "List Template",
+                                "description": "View selected template",
+                                "service-api": "template/sms/v1/get-template",
+                                "browser-url": "dashboard/template-detail/oid"
+                            },
+                            {
+                                "link-item": "View-template",
+                                "description": "Enable template edit",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Edit-template",
+                                "description": "Save updated template",
+                                "service-api": "template/sms/v1/edit-template",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Edit-template",
+                                "description": "Cancel edit template",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "View-template",
+                                "description": "Go to template list",
+                                "service-api": "template/sms/v1/list-template",
+                                "browser-url": "dashboard/list-template"
+                            },
+                            {
+                                "link-item": "List-template",
+                                "description": "View template list",
+                                "service-api": "-",
+                                "browser-url": "dashboard/list-template"
+                            },
+                            {
+                                "link-item": "List-template",
+                                "description": "Show confirmation box to delete from template list",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "List-template",
+                                "description": "Delete template",
+                                "service-api": "template/sms/v1/remove-template",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "List-template",
+                                "description": "Cancel delete template",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Message Provider",
+                                "description": "View create message provider form",
+                                "service-api": "-",
+                                "browser-url": "dashboard/create-message-provider"
+                            },
+                            {
+                                "link-item": "Create Message Provider",
+                                "description": "Create new message provider",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Message Provider",
+                                "description": "Add/Save new message provider",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Message Provider",
+                                "description": "View confirmation box for creating this new message provider",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Message Provider",
+                                "description": "save confirmation to add message provider",
+                                "service-api": "setting/service-provider/v1/create-message-provider",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Message Provider",
+                                "description": "cancel confirmation to add message provider",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Message Provider",
+                                "description": "Reset message provider form",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "List Message Provider",
+                                "description": "View message provider list",
+                                "service-api": "setting/service-provider/v1/list-message-provider",
+                                "browser-url": "dashboard/list-message-provider"
+                            },
+                            {
+                                "link-item": "List Message Provider",
+                                "description": "Select rows on page",
+                                "service-api": "setting/service-provider/v1/list-message-provider",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "List Message Provider",
+                                "description": "Go back to create message provider form",
+                                "service-api": "-",
+                                "browser-url": "dashboard/create-message-provider"
+                            },
+                            {
+                                "link-item": "List Message Provider",
+                                "description": "View message provider detail",
+                                "service-api": "setting/service-provider/v1/get-message-provider",
+                                "browser-url": "dashboard/provider-detail/oid"
+                            },
+                            {
+                                "link-item": "View-message-provider",
+                                "description": "Enable edit message provider ",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Edit-message-provider",
+                                "description": "Save edited message provider ",
+                                "service-api": "setting/service-provider/v1/edit-message-provider",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Edit-message-provider",
+                                "description": "Cancel edit message provider ",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "View-message-provider",
+                                "description": "Go back to message provider list",
+                                "service-api": "setting/service-provider/v1/list-message-provider",
+                                "browser-url": "dashboard/list-message-provider"
+                            },
+                            {
+                                "link-item": "List-message-provider",
+                                "description": "Show confirmation box to delete from message provider list",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "List-message-provider",
+                                "description": "Delete message provider",
+                                "service-api": "setting/service-provider/v1/remove-message-provider",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "List-message-provider",
+                                "description": "Cancel delete message provider",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Message Schedule",
+                                "description": "View create message schedule form",
+                                "service-api": "-",
+                                "browser-url": "dashboard/create-message-schedule"
+                            },
+                            {
+                                "link-item": "Create Message Schedule",
+                                "description": "Create new message schedule",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Message Schedule",
+                                "description": "Add/Save new message schedule",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Message Schedule",
+                                "description": "View confirmation box for creating this new message schedule",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Message Schedule",
+                                "description": "save confirmation to add message schedule",
+                                "service-api": "messenger/schedule/v1/create-message-schedule",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Message Schedule",
+                                "description": "cancel confirmation to add message schedule",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Create Message Schedule",
+                                "description": "Reset message schedule form",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "List Message Schedule",
+                                "description": "View for schedule list",
+                                "service-api": "-",
+                                "browser-url": "dashboard/list-message-schedule"
+                            },
+                            {
+                                "link-item": "List Message Schedule",
+                                "description": "View schedule list by selecting branch",
+                                "service-api": "messenger/schedule/v1/list-message-schedule",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "List Message Schedule",
+                                "description": "View schedule list by selecting rows on page",
+                                "service-api": "messenger/schedule/v1/list-message-schedule",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "List Message Schedule",
+                                "description": "Go back to create schedule",
+                                "service-api": "-",
+                                "browser-url": "dashboard/create-message-schedule"
+                            },
+                            {
+                                "link-item": "List Message Schedule",
+                                "description": "View schedule details",
+                                "service-api": "messenger/schedule/v1/get-message-schedule",
+                                "browser-url": "dashboard/schedule-detail/oid"
+                            },
+                            {
+                                "link-item": "View-message-schedule",
+                                "description": "Enable edit message provider ",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Edit-message-schedule",
+                                "description": "Show confirmation box to save edited message provider ",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Edit-message-schedule",
+                                "description": "Show confirmation box ",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Edit-message-schedule",
+                                "description": "Save edited schedule",
+                                "service-api": "messenger/schedule/v1/edit-message-schedule",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Edit-message-schedule",
+                                "description": "Cancel edit schedule",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Edit-message-schedule",
+                                "description": "Cancel edit message schedule ",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "View-message-schedule",
+                                "description": "Go back to message schedule list",
+                                "service-api": "messenger/schedule/v1/list-message-schedule",
+                                "browser-url": "dashboard/list-message-schedule"
+                            },
+                            {
+                                "link-item": "List-message-schedule",
+                                "description": "Show confirmation box to delete from message schedule list",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "List-message-schedule",
+                                "description": "Delete message schedule",
+                                "service-api": "messenger/schedule/v1/remove-message-schedule",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "List-message-schedule",
+                                "description": "Cancel delete message schedule",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Send Sms",
+                                "description": "Show send sms view ",
+                                "service-api": "-",
+                                "browser-url": "dashboard/send-sms"
+                            },
+                            {
+                                "link-item": "Send Sms",
+                                "description": "Select one or more contacts",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Send Sms",
+                                "description": "Select a message provider name",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Send Sms",
+                                "description": "Show confirmation box to send sms",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Send Sms",
+                                "description": "send sms",
+                                "service-api": "messenger/message/v1/send-sms",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Send Sms",
+                                "description": "Cancel send sms",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Send Sms",
+                                "description": "Resest send sms ",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Upload Csv File",
+                                "description": "View upload csv form",
+                                "service-api": "-",
+                                "browser-url": "dashboard/balance-inquiry"
+                            },
+                            {
+                                "link-item": "Upload Csv File",
+                                "description": "Select a csv file for upload",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Upload Csv File",
+                                "description": "Cancel uploading csv file",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Upload Csv File",
+                                "description": "Remove uploaded csv file",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Upload Csv File",
+                                "description": "Save data of uploaded csv file",
+                                "service-api": "messenger/message/v1/upload-me-balance-data",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Balance-month-end-inquiry",
+                                "description": "Show month end balance inquiry",
+                                "service-api": "messenger/message/v1/list-me-balance-data",
+                                "browser-url": "dashboard/balance-month-end-enquiry"
+                            },
+                            {
+                                "link-item": "Balance-month-end-inquiry",
+                                "description": "Input specific month to show month end balance inquiry",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Balance-month-end-inquiry",
+                                "description": "Show month end balance inquiry for specific month",
+                                "service-api": "messenger/message/v1/list-me-balance-data",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Balance-month-end-inquiry",
+                                "description": "Send sms",
+                                "service-api": "messenger/message/v1/send-monthend-balance-sms",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Sms-status-report",
+                                "description": "Show sms list",
+                                "service-api": "messenger/delivery/v1/get-delivered-sms-list",
+                                "browser-url": "dashboard/sms-log"
+                            },
+                            {
+                                "link-item": "Sms-status-report",
+                                "description": "Select status to show sms list",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Sms-status-report",
+                                "description": "Show sms list by status",
+                                "service-api": "messenger/delivery/v1/get-delivered-sms-list\nmessenger/delivery/v1/list-smslog-by-sms-status",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Sms-status-report",
+                                "description": "Select branch to show sms list",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Sms-status-report",
+                                "description": "Show sms list branch wise",
+                                "service-api": "messenger/delivery/v1/get-delivered-sms-list\nmessenger/delivery/v1/list-smslog-by-sms-status",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Sms-status-report",
+                                "description": "Select dates to show sms list",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Sms-status-report",
+                                "description": "Show sms list date wise",
+                                "service-api": "messenger/delivery/v1/get-delivered-sms-list\nmessenger/delivery/v1/list-smslog-by-sms-status",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Sms-status-report",
+                                "description": "Download csv",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Sms-status-report",
+                                "description": "Download pdf",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Operator-wise-report",
+                                "description": "View for operator wise report",
+                                "service-api": "-",
+                                "browser-url": "dashboard/message-provider-report"
+                            },
+                            {
+                                "link-item": "Operator-wise-report",
+                                "description": "Select message provider",
+                                "service-api": "-",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Operator-wise-report",
+                                "description": "show sms log message provider wise.",
+                                "service-api": "messenger/delivery/v1/list-smslog-by-message-provider",
+                                "browser-url": "-"
+                            },
+                            {
+                                "link-item": "Item-wise-report",
+                                "description": "Select transaction ref.",
+                                "service-api": "-",
+                                "browser-url": "dashboard/item-report"
+                            },
+                            {
+                                "link-item": "Item-wise-report",
+                                "description": "show sms log message tranaction ref. wise.",
+                                "service-api": "messenger/delivery/v1/list-smslog-by-transaction-type",
+                                "browser-url": "-"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "BRANCH.MAKER": {
+        "abs": [
+            {
+                "portlets": [
+                    {
+                        "portlet": "",
+                        "items": [
+                            {
+                                "link-item": "Edit Customers",
+                                "description": "Get all customers both new or old with status",
+                                "service-api": "get-editable-list",
+                                "browser-url": "edit-customers-list"
+                            },
+                            {
+                                "link-item": "Edit Customers",
+                                "description": "Select customers using checkbox",
+                                "service-api": "-",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Edit Customers",
+                                "description": "Lock selected customer",
+                                "service-api": "lock-editable",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Edit Customers",
+                                "description": "Click on row to view customer details",
+                                "service-api": "get-editable-by-oid",
+                                "browser-url": "edit-customer-details"
+                            },
+                            {
+                                "link-item": "Edit Customers",
+                                "description": "Lock from view details page",
+                                "service-api": "lock-editable",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Edit Customers",
+                                "description": "Go back to list view",
+                                "service-api": "-",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "",
+                                "service-api": "my-editable-list",
+                                "browser-url": "my-edit-list"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "",
+                                "service-api": "-",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "",
+                                "service-api": "unlock-from-my-editable-list",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "",
+                                "service-api": "get-by-oid-for-edit",
+                                "browser-url": "edit-customer"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "",
+                                "service-api": "cancel-edit",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "",
+                                "service-api": "validate-edit",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "",
+                                "service-api": "save-edit",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Edit Accounts",
+                                "description": "Get all accounts both new or old with status",
+                                "service-api": "get-editable-list",
+                                "browser-url": "edit-accounts-list"
+                            },
+                            {
+                                "link-item": "Edit Accounts",
+                                "description": "Select accounts using checkbox",
+                                "service-api": "-",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Edit Accounts",
+                                "description": "Lock selected account",
+                                "service-api": "lock-editable",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Edit Accounts",
+                                "description": "Click on row to view account details",
+                                "service-api": "get-editable-by-oid",
+                                "browser-url": "edit-account-details"
+                            },
+                            {
+                                "link-item": "Edit Accounts",
+                                "description": "Lock from view details page",
+                                "service-api": "lock-editable",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "Edit Accounts",
+                                "description": "Go back to list view",
+                                "service-api": "-",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "",
+                                "service-api": "my-editable-list",
+                                "browser-url": "my-edit-list"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "",
+                                "service-api": "-",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "",
+                                "service-api": "unlock-from-my-editable-list",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "",
+                                "service-api": "get-by-oid-for-edit",
+                                "browser-url": "edit-account"
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "",
+                                "service-api": "cancel-edit",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "",
+                                "service-api": "validate-edit",
+                                "browser-url": ""
+                            },
+                            {
+                                "link-item": "My Edit List",
+                                "description": "",
+                                "service-api": "save-edit",
+                                "browser-url": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
